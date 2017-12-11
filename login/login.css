@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    background-color: #fff;
+}
+.main {
+    /*display: block;*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url(login_bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    min-width: 375px;
+    padding: 20px 50px;
+    border-radius: 10px;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+}
+#username,
+#password {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.error-message {
+    display: none;
+    line-height: 30px;
+    color: red;
+}
+.login-forgot {
+    float: right;
+    text-decoration: none;
+    line-height: 30px;
+    color: black;
+}
+#login-button {
+    width: 100%;
+}

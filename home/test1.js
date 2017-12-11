@@ -1,0 +1,1 @@
+window.alert("1:在外链1中的js");
