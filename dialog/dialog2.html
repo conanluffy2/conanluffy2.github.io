@@ -1,0 +1,4156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>聊天记录</title>
+    <style type="text/css">
+      .content {
+        max-width: 800px;
+        margin: auto;
+      }
+        .sys-msg, .sys-msg-keep {
+            margin: 10px auto;
+            overflow: hidden;
+            color: #fff;
+            min-width: 10rem;
+            border-radius: 0.8rem;
+        }
+        .sys-msg-partner-info .message-text {
+            border-radius: 15px!important;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            max-width: 90%;
+        }
+        .sys-msg-keep .message-text {
+            background-color: gray;
+            min-width: 10rem;
+            margin-left: 0.8rem;
+        }
+        .message-text {
+            padding: 10px 20px;
+            float: left;
+            clear: both;
+            border-radius: 25px;
+            position: relative;
+            margin-bottom: 1px;
+        }
+        .partner-label-container {
+            margin-left: -0.2rem;
+            margin-top: 0.5rem;
+        }
+        .partner-label {
+            font-size: 0.5rem;
+            border: solid 1px;
+            border-radius: 10%;
+            padding: 0.12rem 0.28rem;
+            display: inline-block;
+            position: relative;
+            top: -0.1rem;
+            margin: 0rem 0.4rem 0rem 0.2rem;
+        }
+        .message {
+            margin: 10px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        .message.left .message-text {
+            margin-right: 70px;
+            margin-left: 20px;
+            background-color: lightgray;
+            float: left;
+        }
+        .readSign {
+            float: right;
+            margin-right: 10px;
+            margin-top: 0.8rem;
+            font-size: 12px;
+            background-color: lightgray;
+            padding: 2px 5px;
+            border-radius: 4px;
+            position: absolute;
+        }
+        .message.right .message-text {
+            margin-right: 20px;
+            background-color: #f44336;
+            color: #fff;
+            float: right;
+        }
+        .message-text {
+            padding: 10px 20px;
+            float: left;
+            clear: both;
+            border-radius: 25px;
+            position: relative;
+            margin-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="messages">
+        <div id="m1519787769940" class="sys-msg-keep sys-msg-partner-info">
+            <div class="message-text">
+                对方信息：女生 18岁以下 
+            </div>
+        </div>
+        <div id="m1519787779248" class="message right">
+            <div class="readSign" style="right: 94px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                hello
+            </div>
+        </div>
+        <div id="m1519787784703" class="message left">
+            <div class="message-text">
+                你好
+            </div>
+        </div>
+        <div id="m1519787790678" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                嗯嗯
+            </div>
+        </div>
+        <div id="m1519787794958" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我是清流
+            </div>
+        </div>
+        <div id="m1519787807274" class="message left">
+            <div class="message-text">
+                哈哈
+            </div>
+        </div>
+        <div id="m1519787816028" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                对，就是这样
+            </div>
+        </div>
+        <div id="m1519787824596" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这需要首先申明
+            </div>
+        </div>
+        <div id="m1519787828010" class="message left">
+            <div class="message-text">
+                你是小哥哥吗
+            </div>
+        </div>
+        <div id="m1519787831906" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                不聊露骨的话
+            </div>
+        </div>
+        <div id="m1519787834121" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519787837232" class="message left">
+            <div class="message-text">
+                嗯嗯
+            </div>
+        </div>
+        <div id="m1519787847644" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我不太喜欢被叫小哥哥
+            </div>
+        </div>
+        <div id="m1519787850817" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我是男的
+            </div>
+        </div>
+        <div id="m1519787854388" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519787861634" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                一点也不小了
+            </div>
+        </div>
+        <div id="m1519787872792" class="message left">
+            <div class="message-text">
+                叔叔好
+            </div>
+        </div>
+        <div id="m1519787880666" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                呃呃呃
+            </div>
+        </div>
+        <div id="m1519787884846" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                很有意思
+            </div>
+        </div>
+        <div id="m1519787891749" class="message right">
+            <div class="readSign" style="right: 110px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我95的
+            </div>
+        </div>
+        <div id="m1519787899563" class="message left">
+            <div class="message-text">
+                哇
+            </div>
+        </div>
+        <div id="m1519787906685" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                也不能叫叔叔吧
+            </div>
+        </div>
+        <div id="m1519787914844" class="message left">
+            <div class="message-text">
+                我16
+            </div>
+        </div>
+        <div id="m1519787918274" class="message left">
+            <div class="message-text">
+                所以
+            </div>
+        </div>
+        <div id="m1519787927497" class="message left">
+            <div class="message-text">
+                叔叔好
+            </div>
+        </div>
+        <div id="m1519787932400" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519787950601" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                高一？
+            </div>
+        </div>
+        <div id="m1519787958568" class="message left">
+            <div class="message-text">
+                初三
+            </div>
+        </div>
+        <div id="m1519787982457" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                都这么闲吗
+            </div>
+        </div>
+        <div id="m1519787985102" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                毕业班
+            </div>
+        </div>
+        <div id="m1519787992975" class="message left">
+            <div class="message-text">
+                没有
+            </div>
+        </div>
+        <div id="m1519787999329" class="message left">
+            <div class="message-text">
+                刷卷子累了
+            </div>
+        </div>
+        <div id="m1519788004603" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519788007479" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                都这样说
+            </div>
+        </div>
+        <div id="m1519788018973" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我已经遇到不少初中高中生了
+            </div>
+        </div>
+        <div id="m1519788026746" class="message left">
+            <div class="message-text">
+                哇
+            </div>
+        </div>
+        <div id="m1519788033458" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                还不开学的吗
+            </div>
+        </div>
+        <div id="m1519788039571" class="message left">
+            <div class="message-text">
+                快了
+            </div>
+        </div>
+        <div id="m1519788046225" class="message left">
+            <div class="message-text">
+                所以在补作业
+            </div>
+        </div>
+        <div id="m1519788058121" class="message right">
+            <div class="readSign" style="right: 95px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                soga
+            </div>
+        </div>
+        <div id="m1519788064890" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哪天开学
+            </div>
+        </div>
+        <div id="m1519788071920" class="message left">
+            <div class="message-text">
+                4号
+            </div>
+        </div>
+        <div id="m1519788081538" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                还能玩几天
+            </div>
+        </div>
+        <div id="m1519788087602" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                羡慕学生
+            </div>
+        </div>
+        <div id="m1519788091923" class="message left">
+            <div class="message-text">
+                作业都没怎么写
+            </div>
+        </div>
+        <div id="m1519788101861" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈
+            </div>
+        </div>
+        <div id="m1519788111273" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                之前干嘛去了
+            </div>
+        </div>
+        <div id="m1519788121160" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                写不完就抄
+            </div>
+        </div>
+        <div id="m1519788125707" class="message left">
+            <div class="message-text">
+                对啊
+            </div>
+        </div>
+        <div id="m1519788144622" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我猜你不是学霸
+            </div>
+        </div>
+        <div id="m1519788150021" class="message left">
+            <div class="message-text">
+                😂😂
+            </div>
+        </div>
+        <div id="m1519788164435" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519788175388" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                因为学霸一般不会嫌作业多
+            </div>
+        </div>
+        <div id="m1519788182585" class="message left">
+            <div class="message-text">
+                学渣
+            </div>
+        </div>
+        <div id="m1519788201149" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈
+            </div>
+        </div>
+        <div id="m1519788206085" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那就好好玩
+            </div>
+        </div>
+        <div id="m1519788214729" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                别想作业
+            </div>
+        </div>
+        <div id="m1519788226019" class="message left">
+            <div class="message-text">
+                不想不行
+            </div>
+        </div>
+        <div id="m1519788231843" class="message left">
+            <div class="message-text">
+                马上开学
+            </div>
+        </div>
+        <div id="m1519788238206" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519788259671" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                现在初中这么多作业了吗
+            </div>
+        </div>
+        <div id="m1519788266623" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                老说作业写不完
+            </div>
+        </div>
+        <div id="m1519788282667" class="message left">
+            <div class="message-text">
+                因为卷子多
+            </div>
+        </div>
+        <div id="m1519788284032" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我记得自己读书那会好像不会
+            </div>
+        </div>
+        <div id="m1519788318417" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519788323933" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你要在这写作业吗
+            </div>
+        </div>
+        <div id="m1519788325919" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519788330708" class="message left">
+            <div class="message-text">
+                哈哈
+            </div>
+        </div>
+        <div id="m1519788338042" class="message left">
+            <div class="message-text">
+                正在抄
+            </div>
+        </div>
+        <div id="m1519788348800" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                抄还嫌累
+            </div>
+        </div>
+        <div id="m1519788365491" class="message left">
+            <div class="message-text">
+                他胜在数量
+            </div>
+        </div>
+        <div id="m1519788372972" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519788383809" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哪个科目
+            </div>
+        </div>
+        <div id="m1519788392091" class="message left">
+            <div class="message-text">
+                语文
+            </div>
+        </div>
+        <div id="m1519788396576" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                一般就语数外有作业
+            </div>
+        </div>
+        <div id="m1519788398144" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519788400020" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那
+            </div>
+        </div>
+        <div id="m1519788402264" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                是
+            </div>
+        </div>
+        <div id="m1519788404749" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                挺惨的
+            </div>
+        </div>
+        <div id="m1519788412484" class="message left">
+            <div class="message-text">
+                我们七科都有作业
+            </div>
+        </div>
+        <div id="m1519788418044" class="message left">
+            <div class="message-text">
+                都是卷子
+            </div>
+        </div>
+        <div id="m1519788418182" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                卧槽
+            </div>
+        </div>
+        <div id="m1519788421949" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这么惨
+            </div>
+        </div>
+        <div id="m1519788427198" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                还有两科呢
+            </div>
+        </div>
+        <div id="m1519788429802" class="message left">
+            <div class="message-text">
+                嗯嗯
+            </div>
+        </div>
+        <div id="m1519788431862" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                怎么不布置作业
+            </div>
+        </div>
+        <div id="m1519788432883" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519788440425" class="message left">
+            <div class="message-text">
+                没有了啊
+            </div>
+        </div>
+        <div id="m1519788445294" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈？
+            </div>
+        </div>
+        <div id="m1519788448242" class="message left">
+            <div class="message-text">
+                初三就七门
+            </div>
+        </div>
+        <div id="m1519788450121" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你哪里的
+            </div>
+        </div>
+        <div id="m1519788457264" class="message left">
+            <div class="message-text">
+                陕西
+            </div>
+        </div>
+        <div id="m1519788468661" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                语数外物化生政史地
+            </div>
+        </div>
+        <div id="m1519788475216" class="message right">
+            <div class="readSign" style="right: 133px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                不是9门吗
+            </div>
+        </div>
+        <div id="m1519788485193" class="message left">
+            <div class="message-text">
+                我们不考生物地理
+            </div>
+        </div>
+        <div id="m1519788488826" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519788490738" class="message left">
+            <div class="message-text">
+                考综合
+            </div>
+        </div>
+        <div id="m1519788492952" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                挺好的
+            </div>
+        </div>
+        <div id="m1519788507137" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519788509940" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                比我外甥女幸运
+            </div>
+        </div>
+        <div id="m1519788517216" class="message right">
+            <div class="readSign" style="right: 133px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                她们要9门
+            </div>
+        </div>
+        <div id="m1519788519627" class="message left">
+            <div class="message-text">
+                😂😂
+            </div>
+        </div>
+        <div id="m1519788560445" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我春节的时候还教她写作业了
+            </div>
+        </div>
+        <div id="m1519788571044" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                生物地理是真的差
+            </div>
+        </div>
+        <div id="m1519788578230" class="message left">
+            <div class="message-text">
+                你曾经是学霸吗
+            </div>
+        </div>
+        <div id="m1519788583084" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519788586305" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                算吧
+            </div>
+        </div>
+        <div id="m1519788598646" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519788619801" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                在大学之前都算学霸
+            </div>
+        </div>
+        <div id="m1519788629775" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                大学之后就颓废了
+            </div>
+        </div>
+        <div id="m1519788646607" class="message left">
+            <div class="message-text">
+                那挺好的
+            </div>
+        </div>
+        <div id="m1519788658913" class="message left">
+            <div class="message-text">
+                大学不就应该玩了吗
+            </div>
+        </div>
+        <div id="m1519788667157" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519788672774" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这是个错误的信息
+            </div>
+        </div>
+        <div id="m1519788687997" class="message right">
+            <div class="readSign" style="right: 284px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                大学更应该好好学习自己的专业
+            </div>
+        </div>
+        <div id="m1519788697893" class="message left">
+            <div class="message-text">
+                老师一直这么骗我们
+            </div>
+        </div>
+        <div id="m1519788699839" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我找工作的时候就好烦
+            </div>
+        </div>
+        <div id="m1519788714969" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但的确轻松
+            </div>
+        </div>
+        <div id="m1519788720521" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这是没错的
+            </div>
+        </div>
+        <div id="m1519788723363" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                自由
+            </div>
+        </div>
+        <div id="m1519788733880" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但自由让人放纵
+            </div>
+        </div>
+        <div id="m1519788736990" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519788785192" class="message right">
+            <div class="readSign" style="right: 176px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                16岁时02年的？
+            </div>
+        </div>
+        <div id="m1519788791892" class="message left">
+            <div class="message-text">
+                对啊
+            </div>
+        </div>
+        <div id="m1519788827826" class="message right">
+            <div class="readSign" style="right: 318px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我怎么感觉02年的正常应该读高一啊
+            </div>
+        </div>
+        <div id="m1519788844730" class="message left">
+            <div class="message-text">
+                因为我生日小啊
+            </div>
+        </div>
+        <div id="m1519788855649" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519788858832" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                好吧
+            </div>
+        </div>
+        <div id="m1519788876630" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519788890152" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我们这是聊不下去了吗
+            </div>
+        </div>
+        <div id="m1519788891424" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519788895754" class="message left">
+            <div class="message-text">
+                哈哈
+            </div>
+        </div>
+        <div id="m1519788901546" class="message left">
+            <div class="message-text">
+                没有话题了
+            </div>
+        </div>
+        <div id="m1519788917616" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你来这主要目的是干啥
+            </div>
+        </div>
+        <div id="m1519788924041" class="message left">
+            <div class="message-text">
+                聊天
+            </div>
+        </div>
+        <div id="m1519788927732" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                好好
+            </div>
+        </div>
+        <div id="m1519788932714" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                一样
+            </div>
+        </div>
+        <div id="m1519788940265" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                男女都一样
+            </div>
+        </div>
+        <div id="m1519788951987" class="message left">
+            <div class="message-text">
+                但挺多那啥的
+            </div>
+        </div>
+        <div id="m1519788961949" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                嗯呢
+            </div>
+        </div>
+        <div id="m1519788974566" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我是遇不到
+            </div>
+        </div>
+        <div id="m1519788980764" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                主要我是男的
+            </div>
+        </div>
+        <div id="m1519788985012" class="message left">
+            <div class="message-text">
+                然后就会装大屌萝莉吓走他们
+            </div>
+        </div>
+        <div id="m1519788988398" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                一看到我就跑了
+            </div>
+        </div>
+        <div id="m1519788994138" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额鹅鹅鹅
+            </div>
+        </div>
+        <div id="m1519789006746" class="message left">
+            <div class="message-text">
+                😂
+            </div>
+        </div>
+        <div id="m1519789006733" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你可以的
+            </div>
+        </div>
+        <div id="m1519789016937" class="message left">
+            <div class="message-text">
+                还好还好
+            </div>
+        </div>
+        <div id="m1519789030770" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我是在寻找有趣的灵魂
+            </div>
+        </div>
+        <div id="m1519789041805" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                昨晚就遇到一个
+            </div>
+        </div>
+        <div id="m1519789050053" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但是没要到联系方式
+            </div>
+        </div>
+        <div id="m1519789054686" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                唉
+            </div>
+        </div>
+        <div id="m1519789061197" class="message left">
+            <div class="message-text">
+                抓住你了有趣的灵魂
+            </div>
+        </div>
+        <div id="m1519789067887" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                嗯嗯
+            </div>
+        </div>
+        <div id="m1519789073731" class="message left">
+            <div class="message-text">
+                哈哈
+            </div>
+        </div>
+        <div id="m1519789083288" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我自己留联系方式还留错了
+            </div>
+        </div>
+        <div id="m1519789094420" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这下子她想找我也找不到了
+            </div>
+        </div>
+        <div id="m1519789099290" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519789120825" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519789128615" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你就这么话少啊
+            </div>
+        </div>
+        <div id="m1519789137613" class="message left">
+            <div class="message-text">
+                我还好啊
+            </div>
+        </div>
+        <div id="m1519789145580" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                看来你不是一个有趣的灵魂
+            </div>
+        </div>
+        <div id="m1519789146728" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519789157637" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519789178150" class="message left">
+            <div class="message-text">
+                因为无趣所以才来找有趣的
+            </div>
+        </div>
+        <div id="m1519789185513" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                呃呃呃
+            </div>
+        </div>
+        <div id="m1519789190034" class="message right">
+            <div class="readSign" style="right: 77px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                ok
+            </div>
+        </div>
+        <div id="m1519789197653" class="message left">
+            <div class="message-text">
+                没毛病吧
+            </div>
+        </div>
+        <div id="m1519789209309" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                看我能不能带动你
+            </div>
+        </div>
+        <div id="m1519789215696" class="message left">
+            <div class="message-text">
+                哈哈
+            </div>
+        </div>
+        <div id="m1519789215574" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                没毛病啊
+            </div>
+        </div>
+        <div id="m1519789222297" class="message left">
+            <div class="message-text">
+                加油叔叔
+            </div>
+        </div>
+        <div id="m1519789237043" class="message right">
+            <div class="readSign" style="right: 380px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我昨天遇到一个初三的，跟我讲她的家庭矛盾
+            </div>
+        </div>
+        <div id="m1519789243181" class="message left">
+            <div class="message-text">
+                哇
+            </div>
+        </div>
+        <div id="m1519789244950" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                听了我一脸懵逼
+            </div>
+        </div>
+        <div id="m1519789253582" class="message left">
+            <div class="message-text">
+                我就没有碰到这种
+            </div>
+        </div>
+        <div id="m1519789262709" class="message right">
+            <div class="readSign" style="right: 300px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我以前就尝试过帮人解决家庭矛盾
+            </div>
+        </div>
+        <div id="m1519789269143" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                最后很失败
+            </div>
+        </div>
+        <div id="m1519789273719" class="message left">
+            <div class="message-text">
+                嗯嗯
+            </div>
+        </div>
+        <div id="m1519789274123" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我都怕了
+            </div>
+        </div>
+        <div id="m1519789283092" class="message left">
+            <div class="message-text">
+                这种解决不了
+            </div>
+        </div>
+        <div id="m1519789292295" class="message left">
+            <div class="message-text">
+                得他们自己想办法
+            </div>
+        </div>
+        <div id="m1519789291915" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                主要是我没经验
+            </div>
+        </div>
+        <div id="m1519789298063" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我家人都很和睦
+            </div>
+        </div>
+        <div id="m1519789299453" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519789319103" class="message left">
+            <div class="message-text">
+                因为不了解情况
+            </div>
+        </div>
+        <div id="m1519789326872" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                对的
+            </div>
+        </div>
+        <div id="m1519789352921" class="message right">
+            <div class="readSign" style="right: 332px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                不也不喜欢在自己不擅长的领域瞎显摆
+            </div>
+        </div>
+        <div id="m1519789361888" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519789370078" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                容易出丑
+            </div>
+        </div>
+        <div id="m1519789386387" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你有没有遇到很有趣的人呢
+            </div>
+        </div>
+        <div id="m1519789387407" class="message left">
+            <div class="message-text">
+                对，还容易矛盾激化
+            </div>
+        </div>
+        <div id="m1519789391283" class="message left">
+            <div class="message-text">
+                有啊
+            </div>
+        </div>
+        <div id="m1519789391369" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                嗯嗯
+            </div>
+        </div>
+        <div id="m1519789397401" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                说说看啊
+            </div>
+        </div>
+        <div id="m1519789425205" class="message left">
+            <div class="message-text">
+                有几个哥哥还给我说这里狼很多
+            </div>
+        </div>
+        <div id="m1519789432964" class="message left">
+            <div class="message-text">
+                让我防狼
+            </div>
+        </div>
+        <div id="m1519789442503" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519789455776" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                就这样吗
+            </div>
+        </div>
+        <div id="m1519789464868" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519789466499" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                因为我自己没遇到过
+            </div>
+        </div>
+        <div id="m1519789475005" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                所以我也不叫别人防狼
+            </div>
+        </div>
+        <div id="m1519789483444" class="message left">
+            <div class="message-text">
+                我昨天还碰到个非常婉转的狼
+            </div>
+        </div>
+        <div id="m1519789488485" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519789500855" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那你最后怎么发现的
+            </div>
+        </div>
+        <div id="m1519789509707" class="message left">
+            <div class="message-text">
+                他约我出去
+            </div>
+        </div>
+        <div id="m1519789516841" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                卧槽
+            </div>
+        </div>
+        <div id="m1519789532839" class="message left">
+            <div class="message-text">
+                我说我起不来
+            </div>
+        </div>
+        <div id="m1519789535021" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这一点也不婉转啊
+            </div>
+        </div>
+        <div id="m1519789540157" class="message left">
+            <div class="message-text">
+                他说到了再睡
+            </div>
+        </div>
+        <div id="m1519789552872" class="message left">
+            <div class="message-text">
+                不这是后期了
+            </div>
+        </div>
+        <div id="m1519789560957" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519789563800" class="message left">
+            <div class="message-text">
+                一开始就是各种聊
+            </div>
+        </div>
+        <div id="m1519789592918" class="message left">
+            <div class="message-text">
+                最后我给他说你是我碰到的第一个狼，还是个婉转的狼
+            </div>
+        </div>
+        <div id="m1519789600143" class="message left">
+            <div class="message-text">
+                然后他就走了
+            </div>
+        </div>
+        <div id="m1519789601400" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈哈
+            </div>
+        </div>
+        <div id="m1519789608542" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                相当厉害你
+            </div>
+        </div>
+        <div id="m1519789617022" class="message left">
+            <div class="message-text">
+                那当然
+            </div>
+        </div>
+        <div id="m1519789649462" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                还有呢
+            </div>
+        </div>
+        <div id="m1519789663175" class="message left">
+            <div class="message-text">
+                没有特别好玩的了
+            </div>
+        </div>
+        <div id="m1519789687432" class="message left">
+            <div class="message-text">
+                我刚说
+            </div>
+        </div>
+        <div id="m1519789696328" class="message left">
+            <div class="message-text">
+                我掏出来吊比你大
+            </div>
+        </div>
+        <div id="m1519789710493" class="message left">
+            <div class="message-text">
+                然后吓走了一个狼
+            </div>
+        </div>
+        <div id="m1519789712115" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈哈哈哈哈哈
+            </div>
+        </div>
+        <div id="m1519789738683" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                还是现在的人开放
+            </div>
+        </div>
+        <div id="m1519789739728" class="message left">
+            <div class="message-text">
+                😂😂
+            </div>
+        </div>
+        <div id="m1519789769011" class="message left">
+            <div class="message-text">
+                贴吧学的
+            </div>
+        </div>
+        <div id="m1519789772435" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519789778637" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                互联网就是这样
+            </div>
+        </div>
+        <div id="m1519789783599" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                各种信息都有
+            </div>
+        </div>
+        <div id="m1519789786440" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                好的坏的
+            </div>
+        </div>
+        <div id="m1519789821178" class="message right">
+            <div class="readSign" style="right: 348px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                其实对你们这些还没有形成稳定三观的人
+            </div>
+        </div>
+        <div id="m1519789829401" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                是有坏处的
+            </div>
+        </div>
+        <div id="m1519789835623" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519789853112" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                少逛些贴吧吧
+            </div>
+        </div>
+        <div id="m1519789859456" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我要去吃饭了
+            </div>
+        </div>
+        <div id="m1519789862592" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                还聊吗
+            </div>
+        </div>
+        <div id="m1519789875326" class="message left">
+            <div class="message-text">
+                我也在吃饭
+            </div>
+        </div>
+        <div id="m1519789883761" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                家里？
+            </div>
+        </div>
+        <div id="m1519789888464" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519789894795" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                一边吃饭一边玩手机
+            </div>
+        </div>
+        <div id="m1519789896132" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                ？
+            </div>
+        </div>
+        <div id="m1519789900950" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                家里人不讲的吗
+            </div>
+        </div>
+        <div id="m1519789902727" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519789914075" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我用的电脑
+            </div>
+        </div>
+        <div id="m1519789923857" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我要去食堂吃饭
+            </div>
+        </div>
+        <div id="m1519789926562" class="message left">
+            <div class="message-text">
+                他们说我中午记得吃饭了
+            </div>
+        </div>
+        <div id="m1519789931667" class="message left">
+            <div class="message-text">
+                终于
+            </div>
+        </div>
+        <div id="m1519789944945" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                所以不能一边玩一边吃饭
+            </div>
+        </div>
+        <div id="m1519789953922" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                终于什么
+            </div>
+        </div>
+        <div id="m1519789953856" class="message left">
+            <div class="message-text">
+                没事
+            </div>
+        </div>
+        <div id="m1519789962969" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后就你一个人在家？
+            </div>
+        </div>
+        <div id="m1519789967019" class="message left">
+            <div class="message-text">
+                没有
+            </div>
+        </div>
+        <div id="m1519789971874" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                还有弟弟
+            </div>
+        </div>
+        <div id="m1519789974175" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                妹妹
+            </div>
+        </div>
+        <div id="m1519789975532" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519789975839" class="message left">
+            <div class="message-text">
+                我两天没吃饭
+            </div>
+        </div>
+        <div id="m1519789981361" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈？
+            </div>
+        </div>
+        <div id="m1519789984618" class="message left">
+            <div class="message-text">
+                一直都忘了吃
+            </div>
+        </div>
+        <div id="m1519789984928" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                为啥
+            </div>
+        </div>
+        <div id="m1519789987278" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519790005282" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                两天不会饿死吗
+            </div>
+        </div>
+        <div id="m1519790010730" class="message left">
+            <div class="message-text">
+                不会
+            </div>
+        </div>
+        <div id="m1519790015643" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                忘了吃饭？
+            </div>
+        </div>
+        <div id="m1519790018714" class="message left">
+            <div class="message-text">
+                有零食
+            </div>
+        </div>
+        <div id="m1519790023199" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519790034592" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你这是一种自残行为吗
+            </div>
+        </div>
+        <div id="m1519790050734" class="message left">
+            <div class="message-text">
+                老忘
+            </div>
+        </div>
+        <div id="m1519790062683" class="message right">
+            <div class="readSign" style="right: 332px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我干脆错高人流高峰，待会再去吃饭了
+            </div>
+        </div>
+        <div id="m1519790080391" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                过了时间就不吃的吗
+            </div>
+        </div>
+        <div id="m1519790095870" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                想什么时候吃也可以啊
+            </div>
+        </div>
+        <div id="m1519790118172" class="message left">
+            <div class="message-text">
+                不饿
+            </div>
+        </div>
+        <div id="m1519790125292" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519790134779" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那你多高多重
+            </div>
+        </div>
+        <div id="m1519790158071" class="message left">
+            <div class="message-text">
+                158
+            </div>
+        </div>
+        <div id="m1519790178619" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                多重呢
+            </div>
+        </div>
+        <div id="m1519790193366" class="message left">
+            <div class="message-text">
+                女生的体重
+            </div>
+        </div>
+        <div id="m1519790238733" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519790243077" class="message left">
+            <div class="message-text">
+                不可说
+            </div>
+        </div>
+        <div id="m1519790244226" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我又不认识你
+            </div>
+        </div>
+        <div id="m1519790246245" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                怕什么
+            </div>
+        </div>
+        <div id="m1519790247997" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                好吧
+            </div>
+        </div>
+        <div id="m1519790252909" class="message left">
+            <div class="message-text">
+                100
+            </div>
+        </div>
+        <div id="m1519790260205" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那还挺正常的
+            </div>
+        </div>
+        <div id="m1519790261681" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519790272749" class="message left">
+            <div class="message-text">
+                对啊
+            </div>
+        </div>
+        <div id="m1519790287800" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                老吃零食对身体不好
+            </div>
+        </div>
+        <div id="m1519790293081" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519790348439" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你刚刚说不是一个人在家？
+            </div>
+        </div>
+        <div id="m1519790356051" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519790357957" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                后面没说完
+            </div>
+        </div>
+        <div id="m1519790367409" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你爸妈在家
+            </div>
+        </div>
+        <div id="m1519790367996" class="message left">
+            <div class="message-text">
+                ？
+            </div>
+        </div>
+        <div id="m1519790375467" class="message left">
+            <div class="message-text">
+                爷爷奶奶
+            </div>
+        </div>
+        <div id="m1519790378058" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                还不叫你吃饭？
+            </div>
+        </div>
+        <div id="m1519790379371" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519790381053" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                好吧
+            </div>
+        </div>
+        <div id="m1519790387657" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                爷爷奶奶也应该叫啊
+            </div>
+        </div>
+        <div id="m1519790403189" class="message left">
+            <div class="message-text">
+                但我不想吃啊
+            </div>
+        </div>
+        <div id="m1519790404303" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你不听？
+            </div>
+        </div>
+        <div id="m1519790411881" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这么任性啊
+            </div>
+        </div>
+        <div id="m1519790419872" class="message left">
+            <div class="message-text">
+                对啊
+            </div>
+        </div>
+        <div id="m1519790431482" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                好吧
+            </div>
+        </div>
+        <div id="m1519790478824" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519790484797" class="message left">
+            <div class="message-text">
+                我吃完了
+            </div>
+        </div>
+        <div id="m1519790504913" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我在想要不要像你要联系方式
+            </div>
+        </div>
+        <div id="m1519790509240" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈哈
+            </div>
+        </div>
+        <div id="m1519790525353" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                感觉也没什么说的
+            </div>
+        </div>
+        <div id="m1519790533023" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519790565164" class="message right">
+            <div class="readSign" style="right: 380px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                之前也干过这样的蠢事，原以为自己能帮上忙
+            </div>
+        </div>
+        <div id="m1519790579126" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                最后倒把自己陷进去了
+            </div>
+        </div>
+        <div id="m1519790584564" class="message left">
+            <div class="message-text">
+                ？
+            </div>
+        </div>
+        <div id="m1519790608531" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                因怜生爱
+            </div>
+        </div>
+        <div id="m1519790619105" class="message left">
+            <div class="message-text">
+                厉害
+            </div>
+        </div>
+        <div id="m1519790629624" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                其实很烦
+            </div>
+        </div>
+        <div id="m1519790646777" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我跟你讲讲这个故事吧
+            </div>
+        </div>
+        <div id="m1519790655619" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                愿意听吗
+            </div>
+        </div>
+        <div id="m1519790682797" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519790723638" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519790726032" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你不在线了吗
+            </div>
+        </div>
+        <div id="m1519790727911" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519790729789" class="message left">
+            <div class="message-text">
+                你说
+            </div>
+        </div>
+        <div id="m1519790754773" class="message right">
+            <div class="readSign" style="right: 350px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我现在的女朋友是一个01年的高二小姑娘
+            </div>
+        </div>
+        <div id="m1519790765388" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                她是我的初恋
+            </div>
+        </div>
+        <div id="m1519790772067" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我们在一起两年半了
+            </div>
+        </div>
+        <div id="m1519790792741" class="message right">
+            <div class="readSign" style="right: 300px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                也不能说两年半吧，中间分了两次
+            </div>
+        </div>
+        <div id="m1519790809622" class="message left">
+            <div class="message-text">
+                分分合合两年半
+            </div>
+        </div>
+        <div id="m1519790815707" class="message right">
+            <div class="readSign" style="right: 332px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我当初就是因为因怜生爱，喜欢上她的
+            </div>
+        </div>
+        <div id="m1519790818626" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                嗯嗯
+            </div>
+        </div>
+        <div id="m1519790826147" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                她是我亲戚的亲戚
+            </div>
+        </div>
+        <div id="m1519790858754" class="message right">
+            <div class="readSign" style="right: 492px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                在她初二的寒假，已经偶然的机会，我那亲戚叫我教她写作业
+            </div>
+        </div>
+        <div id="m1519790868154" class="message right">
+            <div class="readSign" style="right: 197px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我们就加了QQ
+            </div>
+        </div>
+        <div id="m1519790873058" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                本来没什么的
+            </div>
+        </div>
+        <div id="m1519790888798" class="message right">
+            <div class="readSign" style="right: 284px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我一般加了没事也不会招人聊天
+            </div>
+        </div>
+        <div id="m1519790903175" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但有一天突然加回我
+            </div>
+        </div>
+        <div id="m1519790916169" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519790918965" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                原来她把所有的好友都删了
+            </div>
+        </div>
+        <div id="m1519790927393" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我们那次就聊了很多
+            </div>
+        </div>
+        <div id="m1519790943880" class="message right">
+            <div class="readSign" style="right: 316px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我说有不会的题目还可以来找我
+            </div>
+        </div>
+        <div id="m1519790970731" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                过了几天，她还真问我题目了
+            </div>
+        </div>
+        <div id="m1519790982572" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后就又讲了很多
+            </div>
+        </div>
+        <div id="m1519791000020" class="message right">
+            <div class="readSign" style="right: 284px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                聊到她自残，聊到她的家庭问题
+            </div>
+        </div>
+        <div id="m1519791001931" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519791017778" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我就好人心泛滥
+            </div>
+        </div>
+        <div id="m1519791024346" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                心疼她
+            </div>
+        </div>
+        <div id="m1519791038325" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                为了扭转她自残的想法
+            </div>
+        </div>
+        <div id="m1519791051986" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                不断给她灌输观念
+            </div>
+        </div>
+        <div id="m1519791065913" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                每天都聊
+            </div>
+        </div>
+        <div id="m1519791067626" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519791097900" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                现在她不会自残了
+            </div>
+        </div>
+        <div id="m1519791107767" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                后来聊的太多了
+            </div>
+        </div>
+        <div id="m1519791113952" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                就慢慢喜欢她了
+            </div>
+        </div>
+        <div id="m1519791133042" class="message right">
+            <div class="readSign" style="right: 373px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                一开始想在QQ上表白，但是觉得太不正式了
+            </div>
+        </div>
+        <div id="m1519791159530" class="message right">
+            <div class="readSign" style="right: 316px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后就想了一个办法，暑假帮她补课
+            </div>
+        </div>
+        <div id="m1519791167974" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后就真的成了
+            </div>
+        </div>
+        <div id="m1519791178145" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我回老家帮她补课
+            </div>
+        </div>
+        <div id="m1519791192219" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                过了几天我就表白了
+            </div>
+        </div>
+        <div id="m1519791217543" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后过了一个星期她就答应了
+            </div>
+        </div>
+        <div id="m1519791234306" class="message right">
+            <div class="readSign" style="right: 300px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                现在想想，可能她当时什么都不懂
+            </div>
+        </div>
+        <div id="m1519791245155" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                只是一个将要上初三的孩子
+            </div>
+        </div>
+        <div id="m1519791255917" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                当时没想那么多
+            </div>
+        </div>
+        <div id="m1519791261416" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后就在一起了
+            </div>
+        </div>
+        <div id="m1519791284096" class="message right">
+            <div class="readSign" style="right: 316px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我们能每天见面的时间也就那两个月
+            </div>
+        </div>
+        <div id="m1519791297836" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                后来就很少见面
+            </div>
+        </div>
+        <div id="m1519791310539" class="message right">
+            <div class="readSign" style="right: 284px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                因为我读大学的城市离家比较远
+            </div>
+        </div>
+        <div id="m1519791356468" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                在慢慢的，我们就产生了矛盾
+            </div>
+        </div>
+        <div id="m1519791369214" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                经常吵架
+            </div>
+        </div>
+        <div id="m1519791382569" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我也没谈过恋爱
+            </div>
+        </div>
+        <div id="m1519791386130" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                没经验
+            </div>
+        </div>
+        <div id="m1519791394459" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                所以毫无办法
+            </div>
+        </div>
+        <div id="m1519791405347" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后一年之后就分了
+            </div>
+        </div>
+        <div id="m1519791432377" class="message right">
+            <div class="readSign" style="right: 282px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                在一起的时候是2015年7月22日
+            </div>
+        </div>
+        <div id="m1519791460213" class="message right">
+            <div class="readSign" style="right: 506px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                第一次分手是冷战，然后我给她写了一封邮件，2016年10月2日
+            </div>
+        </div>
+        <div id="m1519791485675" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                后来一个多月后她又加回我
+            </div>
+        </div>
+        <div id="m1519791510982" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这时她已经高一了
+            </div>
+        </div>
+        <div id="m1519791512692" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519791516075" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你还在看吗
+            </div>
+        </div>
+        <div id="m1519791523467" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519791527509" class="message right">
+            <div class="readSign" style="right: 77px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                ok
+            </div>
+        </div>
+        <div id="m1519791545035" class="message right">
+            <div class="readSign" style="right: 189px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                11月的时候加回我
+            </div>
+        </div>
+        <div id="m1519791556772" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后又聊了起来
+            </div>
+        </div>
+        <div id="m1519791568441" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                后来我就定了一个合约
+            </div>
+        </div>
+        <div id="m1519791610654" class="message right">
+            <div class="readSign" style="right: 471px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我能找到月薪过万的工作，她能考进年级前200我们就符合
+            </div>
+        </div>
+        <div id="m1519791613167" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                复合
+            </div>
+        </div>
+        <div id="m1519791622112" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                当时我是大四上学期
+            </div>
+        </div>
+        <div id="m1519791638035" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我们就这样过着
+            </div>
+        </div>
+        <div id="m1519791650127" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                虽然名义上没有复合
+            </div>
+        </div>
+        <div id="m1519791665529" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但是都没把对方当普通朋友
+            </div>
+        </div>
+        <div id="m1519791702137" class="message right">
+            <div class="readSign" style="right: 375px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                17年的3月末，我就签了合同，没有月薪过万
+            </div>
+        </div>
+        <div id="m1519791729659" class="message right">
+            <div class="readSign" style="right: 396px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我就说输了，但是合约继续，你仍然可以去完成
+            </div>
+        </div>
+        <div id="m1519791751372" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你完成的我就尽量事事听你的
+            </div>
+        </div>
+        <div id="m1519791785760" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但没过几天我们又各种吵
+            </div>
+        </div>
+        <div id="m1519791793198" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后又是冷战
+            </div>
+        </div>
+        <div id="m1519791854351" class="message right">
+            <div class="readSign" style="right: 364px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                而且冷战刚开始，有同学追她，她就答应了
+            </div>
+        </div>
+        <div id="m1519791886706" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                她跟我说她有新男朋友的那天
+            </div>
+        </div>
+        <div id="m1519791893511" class="message right">
+            <div class="readSign" style="right: 151px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                4月16号好像
+            </div>
+        </div>
+        <div id="m1519791914172" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我刚号考驾照科目二没过
+            </div>
+        </div>
+        <div id="m1519791917919" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                心情极差
+            </div>
+        </div>
+        <div id="m1519791928966" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后又遇到这件事
+            </div>
+        </div>
+        <div id="m1519791963060" class="message right">
+            <div class="readSign" style="right: 284px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后就把它所有联系方式都删了
+            </div>
+        </div>
+        <div id="m1519791974421" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                电脑上的聊天记录也删了
+            </div>
+        </div>
+        <div id="m1519791989774" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                关于她的一切都似乎消失了
+            </div>
+        </div>
+        <div id="m1519792009813" class="message right">
+            <div class="readSign" style="right: 364px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                就连我输入法中她的名字，我也特地去删了
+            </div>
+        </div>
+        <div id="m1519792029795" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那一段时间过得很痛苦
+            </div>
+        </div>
+        <div id="m1519792045044" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我经常跟我同学晚上出去跑步
+            </div>
+        </div>
+        <div id="m1519792058061" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                跟他说这些事
+            </div>
+        </div>
+        <div id="m1519792068774" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但我那同学也没谈过恋爱
+            </div>
+        </div>
+        <div id="m1519792071950" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519792083132" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                所以什么也没有
+            </div>
+        </div>
+        <div id="m1519792099805" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                又过了一个多月
+            </div>
+        </div>
+        <div id="m1519792114473" class="message right">
+            <div class="readSign" style="right: 149px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                她又加我QQ
+            </div>
+        </div>
+        <div id="m1519792130404" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我几乎没想就拒绝了
+            </div>
+        </div>
+        <div id="m1519792164302" class="message right">
+            <div class="readSign" style="right: 332px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后又加了微信，加的时候说了一句话
+            </div>
+        </div>
+        <div id="m1519792173561" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我心软加了她
+            </div>
+        </div>
+        <div id="m1519792194858" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我当时没问她什么感情状态
+            </div>
+        </div>
+        <div id="m1519792202043" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                就普通朋友那样聊
+            </div>
+        </div>
+        <div id="m1519792219061" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后她又想复合
+            </div>
+        </div>
+        <div id="m1519792225777" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我没同意
+            </div>
+        </div>
+        <div id="m1519792231941" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                当时是五月末了吧
+            </div>
+        </div>
+        <div id="m1519792267268" class="message right">
+            <div class="readSign" style="right: 380px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                六月份她说想复合，说了大半个月，我没同意
+            </div>
+        </div>
+        <div id="m1519792285514" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我就毕业了
+            </div>
+        </div>
+        <div id="m1519792306930" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                工作之前去了我姐家一趟
+            </div>
+        </div>
+        <div id="m1519792335738" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                对了，中间我得知他们分了
+            </div>
+        </div>
+        <div id="m1519792352798" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后最让我生气的地方来了
+            </div>
+        </div>
+        <div id="m1519792362724" class="message right">
+            <div class="readSign" style="right: 158px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                7月2号的晚上
+            </div>
+        </div>
+        <div id="m1519792374982" class="message right">
+            <div class="readSign" style="right: 133px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                应该是1号
+            </div>
+        </div>
+        <div id="m1519792384700" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你还在看吗
+            </div>
+        </div>
+        <div id="m1519792402835" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519792416834" class="message right">
+            <div class="readSign" style="right: 117px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                1号晚上
+            </div>
+        </div>
+        <div id="m1519792431806" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                她跟我说她跟那个人复合了
+            </div>
+        </div>
+        <div id="m1519792433536" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈哈
+            </div>
+        </div>
+        <div id="m1519792458430" class="message right">
+            <div class="readSign" style="right: 284px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我当时真的一开始觉得太可笑了
+            </div>
+        </div>
+        <div id="m1519792472462" class="message right">
+            <div class="readSign" style="right: 284px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我以为我们当时的状态很暧昧了
+            </div>
+        </div>
+        <div id="m1519792482962" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后她反手就给了我一巴掌
+            </div>
+        </div>
+        <div id="m1519792486846" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519792511668" class="message right">
+            <div class="readSign" style="right: 300px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我反问她，她就说我没答应复合啊
+            </div>
+        </div>
+        <div id="m1519792517341" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519792521236" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                就是这样
+            </div>
+        </div>
+        <div id="m1519792535895" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                一开始我不断的说脏话
+            </div>
+        </div>
+        <div id="m1519792539199" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                骂她
+            </div>
+        </div>
+        <div id="m1519792559691" class="message right">
+            <div class="readSign" style="right: 316px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                当然我感觉也不是那种不堪入目的骂
+            </div>
+        </div>
+        <div id="m1519792597163" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                骂着骂着我又没有骨气了
+            </div>
+        </div>
+        <div id="m1519792606031" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我求她复合
+            </div>
+        </div>
+        <div id="m1519792625824" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                想想真是贱
+            </div>
+        </div>
+        <div id="m1519792633323" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那天很晚才睡
+            </div>
+        </div>
+        <div id="m1519792660708" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                第二天跟我姐一家去上海玩
+            </div>
+        </div>
+        <div id="m1519792671149" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我在车上一直跟她聊天
+            </div>
+        </div>
+        <div id="m1519792681616" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                死皮赖脸的求她复合
+            </div>
+        </div>
+        <div id="m1519792703465" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                当然说了什么都没用
+            </div>
+        </div>
+        <div id="m1519792712011" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我就开始工作了
+            </div>
+        </div>
+        <div id="m1519792726894" class="message right">
+            <div class="readSign" style="right: 149px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                7月十几号吧
+            </div>
+        </div>
+        <div id="m1519792750061" class="message right">
+            <div class="readSign" style="right: 300px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这期间我们还是断断续续的聊些天
+            </div>
+        </div>
+        <div id="m1519792770504" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                有一天晚上突然给我打电话
+            </div>
+        </div>
+        <div id="m1519792785521" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我真是又好气又好笑
+            </div>
+        </div>
+        <div id="m1519792794493" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                她说她在外面迷路了
+            </div>
+        </div>
+        <div id="m1519792823876" class="message right">
+            <div class="readSign" style="right: 508px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我说你怎么不找你男朋友，我一个在十万八千里的人能帮你什么
+            </div>
+        </div>
+        <div id="m1519792852755" class="message right">
+            <div class="readSign" style="right: 348px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后她说是因为我那亲戚跟她妈说了什么
+            </div>
+        </div>
+        <div id="m1519792868646" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                所以这事和我有关
+            </div>
+        </div>
+        <div id="m1519792910247" class="message right">
+            <div class="readSign" style="right: 380px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我更好笑了，我亲戚说什么又不是我能控制的
+            </div>
+        </div>
+        <div id="m1519792920114" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后跟她东扯西扯
+            </div>
+        </div>
+        <div id="m1519792926805" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那几天也就那样过去了
+            </div>
+        </div>
+        <div id="m1519792954155" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后公司组织新人去素质拓展
+            </div>
+        </div>
+        <div id="m1519792959806" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                去了无锡
+            </div>
+        </div>
+        <div id="m1519792965103" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哇
+            </div>
+        </div>
+        <div id="m1519792974553" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                更有意思的地方来了
+            </div>
+        </div>
+        <div id="m1519792986769" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                拓展的最后一天
+            </div>
+        </div>
+        <div id="m1519793005873" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我当时玩完上车
+            </div>
+        </div>
+        <div id="m1519793022508" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后她跟我说他分手了
+            </div>
+        </div>
+        <div id="m1519793030480" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我就大笑
+            </div>
+        </div>
+        <div id="m1519793031826" class="message right">
+            <div class="readSign" style="right: 124px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈哈
+            </div>
+        </div>
+        <div id="m1519793044386" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但是也就特别开心了那么一会
+            </div>
+        </div>
+        <div id="m1519793081875" class="message right">
+            <div class="readSign" style="right: 444px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                因为他们分手的原因是她那小男友回去找她的前女友了
+            </div>
+        </div>
+        <div id="m1519793106568" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                因为她那小男友睡了他前女友
+            </div>
+        </div>
+        <div id="m1519793126248" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你知道我为什笑不出来了吗
+            </div>
+        </div>
+        <div id="m1519793140819" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                因为我竟然输给了这一个渣男
+            </div>
+        </div>
+        <div id="m1519793142876" class="message left">
+            <div class="message-text">
+                ？
+            </div>
+        </div>
+        <div id="m1519793159336" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这简直对我自信莫大的打击
+            </div>
+        </div>
+        <div id="m1519793181320" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我就跟她说你活该啊
+            </div>
+        </div>
+        <div id="m1519793215332" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后聊了些无关痛痒的事情
+            </div>
+        </div>
+        <div id="m1519793238490" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                她就慢慢淡出了我的视线
+            </div>
+        </div>
+        <div id="m1519793245889" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                后来还把她删了
+            </div>
+        </div>
+        <div id="m1519793270301" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但是我自己也是比较直的人
+            </div>
+        </div>
+        <div id="m1519793299145" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我在知乎上看到她的动态
+            </div>
+        </div>
+        <div id="m1519793324737" class="message right">
+            <div class="readSign" style="right: 295px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                其中几个问题是“失恋教会你什么”
+            </div>
+        </div>
+        <div id="m1519793333827" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我莫名的自信
+            </div>
+        </div>
+        <div id="m1519793345413" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                以为她对我还有意思
+            </div>
+        </div>
+        <div id="m1519793370322" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后心潮澎湃
+            </div>
+        </div>
+        <div id="m1519793384576" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                筹划了两三天
+            </div>
+        </div>
+        <div id="m1519793391771" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                给她写了一封邮件
+            </div>
+        </div>
+        <div id="m1519793422647" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我们就用邮件聊了一两天
+            </div>
+        </div>
+        <div id="m1519793436811" class="message right">
+            <div class="readSign" style="right: 215px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这时候是8月20号左右
+            </div>
+        </div>
+        <div id="m1519793446292" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我们加回好友了
+            </div>
+        </div>
+        <div id="m1519793467085" class="message right">
+            <div class="readSign" style="right: 300px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我们又开始了不痛不痒的聊天
+            </div>
+        </div>
+        <div id="m1519793488246" class="message right">
+            <div class="readSign" style="right: 309px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但是8月末，我试用期没过，失业了
+            </div>
+        </div>
+        <div id="m1519793497747" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后她就不断的安慰我
+            </div>
+        </div>
+        <div id="m1519793522940" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哎
+            </div>
+        </div>
+        <div id="m1519793543005" class="message left">
+            <div class="message-text">
+                ？
+            </div>
+        </div>
+        <div id="m1519793549664" class="message right">
+            <div class="readSign" style="right: 300px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                就这么过了一两个月，她又想复合
+            </div>
+        </div>
+        <div id="m1519793564510" class="message right">
+            <div class="readSign" style="right: 380px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我总拒绝说我们不合适，已经被证明过了
+            </div>
+        </div>
+        <div id="m1519793584749" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                说过很多我都拒绝了
+            </div>
+        </div>
+        <div id="m1519793591891" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                但那时我失业
+            </div>
+        </div>
+        <div id="m1519793604863" class="message right">
+            <div class="readSign" style="right: 284px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                一个人在出租房里，真的很孤独
+            </div>
+        </div>
+        <div id="m1519793618518" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                只有她每天陪我聊天
+            </div>
+        </div>
+        <div id="m1519793648628" class="message right">
+            <div class="readSign" style="right: 253px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这种情况一直持续到11月份
+            </div>
+        </div>
+        <div id="m1519793667306" class="message right">
+            <div class="readSign" style="right: 316px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                有一天我看到罗胖子的《逻辑思维》
+            </div>
+        </div>
+        <div id="m1519793678214" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                里面有一段思想打动了我
+            </div>
+        </div>
+        <div id="m1519793690472" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我再三考虑
+            </div>
+        </div>
+        <div id="m1519793708411" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                对了
+            </div>
+        </div>
+        <div id="m1519793720149" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这之前有一个大前提没说
+            </div>
+        </div>
+        <div id="m1519793750210" class="message right">
+            <div class="readSign" style="right: 444px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那就是：我一生只想谈一次恋爱——这是我的爱情理想
+            </div>
+        </div>
+        <div id="m1519793797608" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我再三考虑
+            </div>
+        </div>
+        <div id="m1519793835386" class="message right">
+            <div class="readSign" style="right: 492px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                与其这样让我们的感情自生自灭，还不如做出点行动去改变它
+            </div>
+        </div>
+        <div id="m1519793887838" class="message right">
+            <div class="readSign" style="right: 493px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后在11月11号那天，我跟她说了自己想法，然后我们复合了
+            </div>
+        </div>
+        <div id="m1519793892615" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                狗血吧
+            </div>
+        </div>
+        <div id="m1519793904377" class="message right">
+            <div class="readSign" style="right: 252px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                其实我没注意那天是光棍节
+            </div>
+        </div>
+        <div id="m1519793921490" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我那几个月完全没有时间观念
+            </div>
+        </div>
+        <div id="m1519793953723" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我们又在一起了
+            </div>
+        </div>
+        <div id="m1519793995791" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519794007209" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                就这样到了现在
+            </div>
+        </div>
+        <div id="m1519794024344" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这期间也是各种吵架
+            </div>
+        </div>
+        <div id="m1519794044993" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519794046923" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那个
+            </div>
+        </div>
+        <div id="m1519794057029" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                你不要把我的截图放到网上啊
+            </div>
+        </div>
+        <div id="m1519794068049" class="message left">
+            <div class="message-text">
+                不放
+            </div>
+        </div>
+        <div id="m1519794076493" class="message right">
+            <div class="readSign" style="right: 99px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那OK
+            </div>
+        </div>
+        <div id="m1519794090101" class="message right">
+            <div class="readSign" style="right: 204px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我已经很难信任她了
+            </div>
+        </div>
+        <div id="m1519794094619" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519794111109" class="message left">
+            <div class="message-text">
+                感觉有一段时间你是她备胎…
+            </div>
+        </div>
+        <div id="m1519794119518" class="message right">
+            <div class="readSign" style="right: 364px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                而且我就在等结束异地会不会是另一种结果
+            </div>
+        </div>
+        <div id="m1519794121000" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                嗯呢
+            </div>
+        </div>
+        <div id="m1519794144836" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                所以我想坚持到她上大学
+            </div>
+        </div>
+        <div id="m1519794152023" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                反正已经两年半了
+            </div>
+        </div>
+        <div id="m1519794162405" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                再用一年半又如何
+            </div>
+        </div>
+        <div id="m1519794169387" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519794184406" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                刚在一起的时候设想就是四年
+            </div>
+        </div>
+        <div id="m1519794204323" class="message left">
+            <div class="message-text">
+                那万一你坚持折磨多年最后却不是你
+            </div>
+        </div>
+        <div id="m1519794210931" class="message left">
+            <div class="message-text">
+                怎么办
+            </div>
+        </div>
+        <div id="m1519794236564" class="message right">
+            <div class="readSign" style="right: 140px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那也没办法
+            </div>
+        </div>
+        <div id="m1519794247759" class="message right">
+            <div class="readSign" style="right: 236px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                我只是在坚持自己的理想
+            </div>
+        </div>
+        <div id="m1519794254203" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519794346562" class="message right">
+            <div class="readSign" style="right: 316px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                其实我一直在想改变我对爱情的看法
+            </div>
+        </div>
+        <div id="m1519794358298" class="message right">
+            <div class="readSign" style="right: 220px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                想不把它看得那么隆重
+            </div>
+        </div>
+        <div id="m1519794370658" class="message right">
+            <div class="readSign" style="right: 268px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                那样我就能更好的接受过去了
+            </div>
+        </div>
+        <div id="m1519794377328" class="message left">
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519794386538" class="message left">
+            <div class="message-text">
+                但是不容易啊
+            </div>
+        </div>
+        <div id="m1519794389139" class="message right">
+            <div class="readSign" style="right: 316px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                前些天看了《哥哥太爱我了怎么办》
+            </div>
+        </div>
+        <div id="m1519794411209" class="message right">
+            <div class="readSign" style="right: 364px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                然后我就想我是不是把谈恋爱看得太正式了
+            </div>
+        </div>
+        <div id="m1519794420752" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                其实恋爱也就那样
+            </div>
+        </div>
+        <div id="m1519794424794" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                没有那么重要
+            </div>
+        </div>
+        <div id="m1519794433694" class="message right">
+            <div class="readSign" style="right: 156px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                换人没什么的
+            </div>
+        </div>
+        <div id="m1519794446839" class="message right">
+            <div class="readSign" style="right: 172px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                这思想慢慢改吧
+            </div>
+        </div>
+        <div id="m1519794453543" class="message left">
+            <div class="message-text">
+                有些人只是过客
+            </div>
+        </div>
+        <div id="m1519794461895" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                嗯嗯
+            </div>
+        </div>
+        <div id="m1519794509412" class="message left">
+            <div class="message-text">
+                好了，我该去补课了
+            </div>
+        </div>
+        <div id="m1519794516055" class="message right">
+            <div class="readSign" style="right: 92px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                嗯嗯
+            </div>
+        </div>
+        <div id="m1519794524435" class="message left">
+            <div class="message-text">
+                和你聊天很开心
+            </div>
+        </div>
+        <div id="m1519794527283" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                额
+            </div>
+        </div>
+        <div id="m1519794532236" class="message left">
+            <div class="message-text">
+                谢谢
+            </div>
+        </div>
+        <div id="m1519794532852" class="message right">
+            <div class="readSign" style="right: 188px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                听了一个故事而已
+            </div>
+        </div>
+        <div id="m1519794535007" class="message right">
+            <div class="readSign" style="right: 108px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                哈哈哈
+            </div>
+        </div>
+        <div id="m1519794540029" class="message left">
+            <div class="message-text">
+                拜拜
+            </div>
+        </div>
+        <div id="m1519794547704" class="message right">
+            <div class="readSign" style="right: 76px; visibility: visible;">
+                已读
+            </div>
+            <div class="message-text">
+                嗯
+            </div>
+        </div>
+        <div id="m1519794558398" class="sys-msg">
+            <div class="message-text">
+                对方离开了。
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
