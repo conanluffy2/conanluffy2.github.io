@@ -2,24 +2,94 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>登录</title>
-	<link rel="stylesheet" type="text/css" href="../lib/css/bootstrap.min.css">
-	<script type="text/javascript" src="../lib/js/jquery-2.0.3.js"></script>
-	<script type="text/javascript" src="../lib/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="../tool.js"></script>
-	<link rel="stylesheet" type="text/css" href="login.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>聊天记录</title>
+	<style type="text/css">
+	  .content {
+	  	max-width: 800px;
+	  	margin: auto;
+	  }
+		.sys-msg, .sys-msg-keep {
+		    margin: 10px auto;
+		    overflow: hidden;
+		    color: #fff;
+		    min-width: 10rem;
+		    border-radius: 0.8rem;
+		}
+		.sys-msg-partner-info .message-text {
+		    border-radius: 15px!important;
+		    padding-top: 0.5rem;
+		    padding-bottom: 0.5rem;
+		    max-width: 90%;
+		}
+		.sys-msg-keep .message-text {
+		    background-color: gray;
+		    min-width: 10rem;
+		    margin-left: 0.8rem;
+		}
+		.message-text {
+		    padding: 10px 20px;
+		    float: left;
+		    clear: both;
+		    border-radius: 25px;
+		    position: relative;
+		    margin-bottom: 1px;
+		}
+		.partner-label-container {
+		    margin-left: -0.2rem;
+		    margin-top: 0.5rem;
+		}
+		.partner-label {
+		    font-size: 0.5rem;
+		    border: solid 1px;
+		    border-radius: 10%;
+		    padding: 0.12rem 0.28rem;
+		    display: inline-block;
+		    position: relative;
+		    top: -0.1rem;
+		    margin: 0rem 0.4rem 0rem 0.2rem;
+		}
+		.message {
+		    margin: 10px auto;
+		    overflow: hidden;
+		    position: relative;
+		}
+		.message.left .message-text {
+		    margin-right: 70px;
+		    margin-left: 20px;
+		    background-color: lightgray;
+		    float: left;
+		}
+		.readSign {
+		    float: right;
+		    margin-right: 10px;
+		    margin-top: 0.8rem;
+		    font-size: 12px;
+		    background-color: lightgray;
+		    padding: 2px 5px;
+		    border-radius: 4px;
+		    position: absolute;
+		}
+		.message.right .message-text {
+		    margin-right: 20px;
+		    background-color: #f44336;
+		    color: #fff;
+		    float: right;
+		}
+		.message-text {
+		    padding: 10px 20px;
+		    float: left;
+		    clear: both;
+		    border-radius: 25px;
+		    position: relative;
+		    margin-bottom: 1px;
+		}
+	</style>
 </head>
 <body>
-	<div class="main">
-		<div class="login">
-			<form class="form-inline" role="form">
-				<input type="text" class="form-control" id="username" placeholder="账号">
-				<input type="password" class="form-control" id="password" placeholder="密码">
-				<span class="error-message">账号或密码错误</span><a href="" class="login-forgot">忘记密码？</a>
-				<input type="button" id="login-button" class="btn btn-primary" value="登录" onclick="login()">
-			</form>
-		</div>
-	</div>
-	<script type="text/javascript" src="login.js"></script>
+<div class="content">
+
+</div>
 </body>
 </html>
