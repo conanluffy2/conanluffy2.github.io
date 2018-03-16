@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>聊天记录</title>
+	<style type="text/css">
+	  .content {
+	  	max-width: 800px;
+	  	margin: auto;
+	  }
+		.sys-msg, .sys-msg-keep {
+		    margin: 10px auto;
+		    overflow: hidden;
+		    color: #fff;
+		    min-width: 10rem;
+		    border-radius: 0.8rem;
+		}
+		.sys-msg-partner-info .message-text {
+		    border-radius: 15px!important;
+		    padding-top: 0.5rem;
+		    padding-bottom: 0.5rem;
+		    max-width: 90%;
+		}
+		.sys-msg-keep .message-text {
+		    background-color: gray;
+		    min-width: 10rem;
+		    margin-left: 0.8rem;
+		}
+		.message-text {
+		    padding: 10px 20px;
+		    float: left;
+		    clear: both;
+		    border-radius: 25px;
+		    position: relative;
+		    margin-bottom: 1px;
+		}
+		.partner-label-container {
+		    margin-left: -0.2rem;
+		    margin-top: 0.5rem;
+		}
+		.partner-label {
+		    font-size: 0.5rem;
+		    border: solid 1px;
+		    border-radius: 10%;
+		    padding: 0.12rem 0.28rem;
+		    display: inline-block;
+		    position: relative;
+		    top: -0.1rem;
+		    margin: 0rem 0.4rem 0rem 0.2rem;
+		}
+		.message {
+		    margin: 10px auto;
+		    overflow: hidden;
+		    position: relative;
+		}
+		.message.left .message-text {
+		    margin-right: 70px;
+		    margin-left: 20px;
+		    background-color: lightgray;
+		    float: left;
+		}
+		.readSign {
+		    float: right;
+		    margin-right: 10px;
+		    margin-top: 0.8rem;
+		    font-size: 12px;
+		    background-color: lightgray;
+		    padding: 2px 5px;
+		    border-radius: 4px;
+		    position: absolute;
+		}
+		.message.right .message-text {
+		    margin-right: 20px;
+		    background-color: #f44336;
+		    color: #fff;
+		    float: right;
+		}
+		.message-text {
+		    padding: 10px 20px;
+		    float: left;
+		    clear: both;
+		    border-radius: 25px;
+		    position: relative;
+		    margin-bottom: 1px;
+		}
+        .sys-msg .message-text, .sys-msg-keep .message-text {
+            background-color: gray;
+            min-width: 10rem;
+            margin-left: 20px;
+        }
+	</style>
+</head>
+<body>
+<div class="content">
+<div class="messages"><div id="m15211128362777" class="sys-msg-keep sys-msg-partner-info"><!----> <div class="message-text">
+                        对方信息：女生 18-23岁 
+                        <div class="partner-label-container"><div class="partner-label">文科生</div><div class="partner-label">清流</div><div class="partner-label">王者荣耀</div></div></div></div><div id="m15211128452282" class="message right"><div class="readSign" style="right: 94px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        hello
+                        <!----></div></div><div id="m15211128498962" class="message left"><!----> <div class="message-text">
+                        哈喽
+                        <!----></div></div><div id="m152111285123710" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        清流？
+                        <!----></div></div><div id="m15211128540181" class="message left"><!----> <div class="message-text">
+                        晚上好呀
+                        <!----></div></div><div id="m15211128536177" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你好
+                        <!----></div></div><div id="m15211128563127" class="message left"><!----> <div class="message-text">
+                        对啊
+                        <!----></div></div><div id="m15211128567312" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        晚上好
+                        <!----></div></div><div id="m15211128720614" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        大学生？
+                        <!----></div></div><div id="m15211128747815" class="message left"><!----> <div class="message-text">
+                        你看我一直屏蔽个别词
+                        <!----></div></div><div id="m15211128809048" class="message left"><!----> <div class="message-text">
+                        就肯定是清流啦
+                        <!----></div></div><div id="m15211128803346" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        嗯嗯
+                        <!----></div></div><div id="m15211128886309" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        挺好的
+                        <!----></div></div><div id="m15211128911213" class="message left"><!----> <div class="message-text">
+                        嗯呐大学生啊你呢
+                        <!----></div></div><div id="m15211129015026" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我去年毕业了
+                        <!----></div></div><div id="m15211129056814" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        现在工作
+                        <!----></div></div><div id="m15211129294641" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        多大？
+                        <!----></div></div><div id="m15211129350026" class="message right"><div class="readSign" style="right: 110px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我95的
+                        <!----></div></div><div id="m15211129724312" class="message left"><!----> <div class="message-text">
+                        我是99的
+                        <!----></div></div><div id="m15211129756744" class="message left"><!----> <div class="message-text">
+                        你呢
+                        <!----></div></div><div id="m15211129829690" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我说了啊
+                        <!----></div></div><div id="m15211129849539" class="message right"><div class="readSign" style="right: 94px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        95的
+                        <!----></div></div><div id="m15211129915203" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你真年轻
+                        <!----></div></div><div id="m15211129937654" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        大一吧
+                        <!----></div></div><div id="m15211130149770" class="message left"><!----> <div class="message-text">
+                        对啊
+                        <!----></div></div><div id="m15211130232558" class="message left"><!----> <div class="message-text">
+                        很年轻吗哈哈哈
+                        <!----></div></div><div id="m15211130295361" class="message left"><!----> <div class="message-text">
+                        感觉心态不怎么年轻啦
+                        <!----></div></div><div id="m15211130305858" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        很年轻啊
+                        <!----></div></div><div id="m15211130345209" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        啊？
+                        <!----></div></div><div id="m15211130373570" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        怎讲
+                        <!----></div></div><div id="m15211130420095" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        成熟？
+                        <!----></div></div><div id="m15211130820763" class="message left"><!----> <div class="message-text">
+                        我也不算成熟吧
+                        <!----></div></div><div id="m15211130881289" class="message left"><!----> <div class="message-text">
+                        但是没有傻白甜
+                        <!----></div></div><div id="m15211130914401" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15211131012318" class="message left"><!----> <div class="message-text">
+                        卖萌撒娇嘤语都不会
+                        <!----></div></div><div id="m15211131048937" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15211131108982" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        不会就不会呗
+                        <!----></div></div><div id="m15211131254169" class="message right"><div class="readSign" style="right: 236px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        什么样的人也会有人喜欢
+                        <!----></div></div><div id="m15211131393015" class="message left"><!----> <div class="message-text">
+                        男生不都喜欢会卖萌撒娇会说嘤语的
+                        <!----></div></div><div id="m15211131390471" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        不一定就要撒娇卖萌
+                        <!----></div></div><div id="m15211131436240" class="message left"><!----> <div class="message-text">
+                        哈哈哈哈哈哈哈哈哈
+                        <!----></div></div><div id="m15211131516535" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        也不是吧
+                        <!----></div></div><div id="m15211131566108" class="message left"><!----> <div class="message-text">
+                        而且，我嘤语英语都不会 😏
+                        <!----></div></div><div id="m15211131668534" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15211131721164" class="message left"><!----> <div class="message-text">
+                        少年，看没看过一个例子
+                        <!----></div></div><div id="m15211131786976" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        什么例子
+                        <!----></div></div><div id="m15211131825276" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我不是少年
+                        <!----></div></div><div id="m15211131879693" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我是青年
+                        <!----></div></div><div id="m15211131899464" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15211132426474" class="message left"><!----> <div class="message-text">
+                        “她比你柔弱，更需要我，所以我不得不选择她”
+                        <!----></div></div><div id="m15211132538544" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        额
+                        <!----></div></div><div id="m15211132633855" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        似乎有点道理
+                        <!----></div></div><div id="m15211132688892" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        但是我不会这样做了
+                        <!----></div></div><div id="m15211132863296" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        因怜生爱是可怕的
+                        <!----></div></div><div id="m15211133050013" class="message left"><!----> <div class="message-text">
+                        我换个说法吧
+                        <!----></div></div><div id="m15211133526902" class="message left"><!----> <div class="message-text">
+                        一个外表坚强到可以事事自理的女汉子，和一个外表柔弱娇小看似弱势需要帮助的萌妹，你选哪个
+                        <!----></div></div><div id="m15211133802291" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        很难选
+                        <!----></div></div><div id="m15211133982059" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        因为我就喜欢自立的人
+                        <!----></div></div><div id="m152111342150010" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        可能我还会选前者
+                        <!----></div></div><div id="m15211134419176" class="message left"><!----> <div class="message-text">
+                        啊嘞？为什么啊
+                        <!----></div></div><div id="m15211134523711" class="message left"><!----> <div class="message-text">
+                        大多数的男生都会呵护小萝莉啊
+                        <!----></div></div><div id="m15211134978451" class="message right"><div class="readSign" style="right: 252px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我喜欢会自己调节情绪的人
+                        <!----></div></div><div id="m15211135024143" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我不会哄人
+                        <!----></div></div><div id="m15211135105694" class="message left"><!----> <div class="message-text">
+                        哈哈哈现实了
+                        <!----></div></div><div id="m15211135328739" class="message left"><!----> <div class="message-text">
+                        那会说嘤语的妹子加分吗 😏
+                        <!----></div></div><div id="m15211135519918" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        可能会把
+                        <!----></div></div><div id="m15211135945888" class="message left"><!----> <div class="message-text">
+                        但是这就很矛盾，如果你选择那种可以事事自理的女汉子，那么也起不到什么男朋友的作用啊，我的意思是说，她坚强习惯了你也帮不上什么忙
+                        <!----></div></div><div id="m15211136232576" class="message left"><!----> <div class="message-text">
+                        这个时候再出现一个弱柳扶风的小萝莉
+                        <!----></div></div><div id="m15211136302413" class="message right"><div class="readSign" style="right: 186px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你是个很成熟的re
+                        <!----></div></div><div id="m15211136319417" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        人
+                        <!----></div></div><div id="m15211136385654" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        嗯
+                        <!----></div></div><div id="m15211136464018" class="message left"><!----> <div class="message-text">
+                        啊嘞？为什么这样评价我 😂
+                        <!----></div></div><div id="m15211136648018" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        反正你这段话很有意思
+                        <!----></div></div><div id="m152111368059110" class="message right"><div class="readSign" style="right: 252px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我觉得我是想找另一个我吧
+                        <!----></div></div><div id="m15211136845289" class="message left"><!----> <div class="message-text">
+                        哈哈哈，觉得有意思就截图留念
+                        <!----></div></div><div id="m15211136982717" class="message left"><!----> <div class="message-text">
+                        另一个你？和你一样坚强的那种吗
+                        <!----></div></div><div id="m15211137005020" class="message right"><div class="readSign" style="right: 268px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我会把整个聊天记录保存下来
+                        <!----></div></div><div id="m15211137093816" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        也不是说坚强
+                        <!----></div></div><div id="m15211137144418" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        就是很有原则
+                        <!----></div></div><div id="m15211137209863" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        就是
+                        <!----></div></div><div id="m15211137499251" class="message left"><!----> <div class="message-text">
+                        看来你喜欢那种势均力敌的感情？
+                        <!----></div></div><div id="m15211137623276" class="message left"><!----> <div class="message-text">
+                        不希望互相庇护，而是互相前进？
+                        <!----></div></div><div id="m15211137619543" class="message right"><div class="readSign" style="right: 332px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        即使她不怎么需要我，但还是能在一起
+                        <!----></div></div><div id="m15211137752703" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        这个也希望
+                        <!----></div></div><div id="m15211137819856" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        互相帮助
+                        <!----></div></div><div id="m15211137924946" class="message left"><!----> <div class="message-text">
+                        嗯嗯……其实我也蛮喜欢这种的
+                        <!----></div></div><div id="m15211137966906" class="message right"><div class="readSign" style="right: 236px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        但是我觉得可以功利一点
+                        <!----></div></div><div id="m15211138098812" class="message left"><!----> <div class="message-text">
+                        不想是因为妹子会撒娇会嘤语才在一起
+                        <!----></div></div><div id="m152111381717110" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        对
+                        <!----></div></div><div id="m15211138207679" class="message left"><!----> <div class="message-text">
+                        性别不是捆绑男生帮助的理由
+                        <!----></div></div><div id="m15211138303188" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        很正确
+                        <!----></div></div><div id="m15211138410955" class="message left"><!----> <div class="message-text">
+                        我遇到一箱矿泉水都是自己扛
+                        <!----></div></div><div id="m15211138493365" class="message left"><!----> <div class="message-text">
+                        然后别人都说你怎么不找男生
+                        <!----></div></div><div id="m15211138482882" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        很强
+                        <!----></div></div><div id="m15211138544566" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15211138597936" class="message left"><!----> <div class="message-text">
+                        😂我开玩笑的说我单身啊
+                        <!----></div></div><div id="m15211138690809" class="message left"><!----> <div class="message-text">
+                        其实我觉得如果自己扛的动
+                        <!----></div></div><div id="m15211138733199" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15211139000727" class="message right"><div class="readSign" style="right: 236px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你是不是有一种爱情理想
+                        <!----></div></div><div id="m15211139078473" class="message left"><!----> <div class="message-text">
+                        然而我低估自己了 😂扛的太累，最后我们班一个女生跟我一起扛的
+                        <!----></div></div><div id="m15211139142399" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        高估吧
+                        <!----></div></div><div id="m152111391988710" class="message left"><!----> <div class="message-text">
+                        什么爱情理想？
+                        <!----></div></div><div id="m15211139279442" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        一辈子只谈一次恋爱
+                        <!----></div></div><div id="m15211139403205" class="message left"><!----> <div class="message-text">
+                        咿？你怎么知道
+                        <!----></div></div><div id="m15211139392628" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        对谈恋爱很谨慎
+                        <!----></div></div><div id="m15211139444185" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        卧槽
+                        <!----></div></div><div id="m15211139466896" class="message left"><!----> <div class="message-text">
+                        嗯对对对对
+                        <!----></div></div><div id="m15211139548028" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        因为我他妈就是这种人
+                        <!----></div></div><div id="m15211139662108" class="message left"><!----> <div class="message-text">
+                        这种人太他妈少了
+                        <!----></div></div><div id="m15211139682522" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        而且执念很强
+                        <!----></div></div><div id="m15211139746456" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        导致自己很痛苦
+                        <!----></div></div><div id="m15211139800494" class="message left"><!----> <div class="message-text">
+                        对的，反正我不会改变了
+                        <!----></div></div><div id="m15211139887299" class="message left"><!----> <div class="message-text">
+                        我也很难受，不想谈恋爱
+                        <!----></div></div><div id="m15211139940164" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        额
+                        <!----></div></div><div id="m15211140063302" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        这种观念真的要改
+                        <!----></div></div><div id="m15211140135674" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        不要把恋爱看得太重
+                        <!----></div></div><div id="m15211140202838" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        虽然我自己也改不了
+                        <!----></div></div><div id="m15211140275494" class="message left"><!----> <div class="message-text">
+                        男生不可能一辈子爱我，但我如果爱上一个人就是一辈子，当我意识到这一点的时候，已经无法改变了
+                        <!----></div></div><div id="m15211140367708" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        唉
+                        <!----></div></div><div id="m15211140467198" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        会很痛苦的
+                        <!----></div></div><div id="m15211140568602" class="message left"><!----> <div class="message-text">
+                        之前有个学心理学的，说我这样的如果爱上渣男就死定了 😂
+                        <!----></div></div><div id="m15211140669106" class="message right"><div class="readSign" style="right: 252px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        因为遇到对的那个人太难了
+                        <!----></div></div><div id="m152111407886910" class="message left"><!----> <div class="message-text">
+                        是啊
+                        <!----></div></div><div id="m15211140925916" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        所以你需要转变观念
+                        <!----></div></div><div id="m15211141037997" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        要不然会很痛苦的
+                        <!----></div></div><div id="m15211141132731" class="message left"><!----> <div class="message-text">
+                        稍等下哦，我去洗头 😂
+                        <!----></div></div><div id="m15211141188592" class="message left"><!----> <div class="message-text">
+                        我觉得我很难转变
+                        <!----></div></div><div id="m15211141174935" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        额
+                        <!----></div></div><div id="m15211141272339" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我想回家了
+                        <!----></div></div><div id="m15211141306321" class="message left"><!----> <div class="message-text">
+                        红红火火恍恍惚惚
+                        <!----></div></div><div id="m15211141356062" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我现在用的电脑
+                        <!----></div></div><div id="m15211141394812" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        没办法带回去
+                        <!----></div></div><div id="m15211141539694" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        留个联系方式吧
+                        <!----></div></div><div id="m15211141669560" class="message right"><div class="readSign" style="right: 174px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        HQC923561179
+                        <!----></div></div><div id="m15211141789397" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我的微信
+                        <!----></div></div><div id="m15211142004749" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        或者不要离开这聊天室
+                        <!----></div></div><div id="m15211142095732" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        明天我打开电脑就还在
+                        <!----></div></div><div id="m15211142235407" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我下班了
+                        <!----></div></div><div id="m15211142439997" class="message right"><div class="readSign" style="right: 316px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        本来早就该走的，只是外面雨比较大
+                        <!----></div></div><div id="m15211142554713" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        现在看它也不会变小
+                        <!----></div></div><div id="m15211143026131" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        记得加我
+                        <!----></div></div><div id="m15211143247113" class="message right"><div class="readSign" style="right: 284px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        遇到这种想法的人还是比较难得
+                        <!----></div></div><div id="m15211159769776" class="message left"><!----> <div class="message-text">
+                        哇噻！没想到你还一直在等我
+                        <!----></div></div><div id="m15211162954006" class="message left"><!----> <div class="message-text">
+                        是啊是啊，这种想法的人太少
+                        <!----></div></div><div id="m152111818264410" class="message left"><!----> <div class="message-text">
+                        遇到你我也很开心啦
+                        <!----></div></div><div id="m15211182204399" class="message left"><!----> <div class="message-text">
+                        我这里不能复制消息，你加我扣扣吧
+                        <!----></div></div><div id="m15211182265864" class="message left"><!----> <div class="message-text">
+                        3489308546
+                        <!----></div></div><div id="m15211182326639" class="message left"><!----> <div class="message-text">
+                        早安
+                        <!----></div></div><div id="m15211632185319" class="sys-msg"><!----> <div class="message-text">
+                        对方离开了。
+                        <!----></div></div> <!----></div>
+</div>
+</body>
+</html>
