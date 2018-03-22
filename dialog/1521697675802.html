@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<title>聊天记录</title>
+	<style type="text/css">
+		.content {
+			max-width: 800px;
+			margin: auto;
+		}
+		.sys-msg, .sys-msg-keep {
+			margin: 10px auto;
+			overflow: hidden;
+			color: #fff;
+			min-width: 10rem;
+			border-radius: 0.8rem;
+		}
+		.sys-msg-partner-info .message-text {
+			border-radius: 15px!important;
+			padding-top: 0.5rem;
+			padding-bottom: 0.5rem;
+			max-width: 90%;
+		}
+		.sys-msg-keep .message-text {
+			background-color: gray;
+			min-width: 10rem;
+			margin-left: 0.8rem;
+		}
+		.message-text {
+			padding: 10px 20px;
+			float: left;
+			clear: both;
+			border-radius: 25px;
+			position: relative;
+			margin-bottom: 1px;
+		}
+		.partner-label-container {
+			margin-left: -0.2rem;
+			margin-top: 0.5rem;
+		}
+		.partner-label {
+			font-size: 0.5rem;
+			border: solid 1px;
+			border-radius: 10%;
+			padding: 0.12rem 0.28rem;
+			display: inline-block;
+			position: relative;
+			top: -0.1rem;
+			margin: 0rem 0.4rem 0rem 0.2rem;
+		}
+		.message {
+			margin: 10px auto;
+			overflow: hidden;
+			position: relative;
+		}
+		.message.left .message-text {
+			margin-right: 70px;
+			margin-left: 20px;
+			background-color: lightgray;
+			float: left;
+		}
+		.readSign {
+			float: right;
+			margin-right: 10px;
+			margin-top: 0.8rem;
+			font-size: 12px;
+			background-color: lightgray;
+			padding: 2px 5px;
+			border-radius: 4px;
+			position: absolute;
+		}
+		.message.right .message-text {
+			margin-right: 20px;
+			background-color: #f44336;
+			color: #fff;
+			float: right;
+		}
+		.message-text {
+			padding: 10px 20px;
+			float: left;
+			clear: both;
+			border-radius: 25px;
+			position: relative;
+			margin-bottom: 1px;
+		}
+		.sys-msg .message-text, .sys-msg-keep .message-text {
+			background-color: gray;
+			min-width: 10rem;
+			margin-left: 20px;
+		}
+		.msg-type-img {
+	    height: 400px;
+	    width: 300px;
+	    max-width: 70%;
+	    color: transparent!important;
+	    background-size: cover;
+	    background-position: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+<div class="messages"><div id="m15216976758072" class="sys-msg-keep sys-msg-partner-info"><!----> <div class="message-text">
+                        对方信息：女生 18-23岁 
+                        <!----></div></div><div id="m15216976861274" class="message right"><div class="readSign" style="right: 94px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        hello
+                        <!----></div></div><div id="m15216976926326" class="message left"><!----> <div class="message-text">
+                        哈喽
+                        <!----></div></div><div id="m15216977020191" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        西安的啊
+                        <!----></div></div><div id="m15216977050498" class="message right"><div class="readSign" style="right: 89px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        nice
+                        <!----></div></div><div id="m15216977229205" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        大概率是大学生了
+                        <!----></div></div><div id="m15216977337690" class="message left"><!----> <div class="message-text">
+                        你怎么知道？？
+                        <!----></div></div><div id="m15216977420108" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我猜的你信不信
+                        <!----></div></div><div id="m15216977451789" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216977546757" class="message left"><!----> <div class="message-text">
+                        噗
+                        <!----></div></div><div id="m15216977695032" class="message left"><!----> <div class="message-text">
+                        好吧
+                        <!----></div></div><div id="m15216977699721" class="message right"><div class="readSign" style="right: 248px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        其实就是看到了你的ip地址
+                        <!----></div></div><div id="m15216977779845" class="message right"><div class="readSign" style="right: 120px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        查了下ip
+                        <!----></div></div><div id="m15216977842904" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你是大学生吧
+                        <!----></div></div><div id="m15216977882457" class="message left"><!----> <div class="message-text">
+                        哇
+                        <!----></div></div><div id="m15216977988226" class="message left"><!----> <div class="message-text">
+                        嗯
+                        <!----></div></div><div id="m15216978044749" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        大几啦
+                        <!----></div></div><div id="m15216978093450" class="message left"><!----> <div class="message-text">
+                        大一
+                        <!----></div></div><div id="m15216978116934" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哇
+                        <!----></div></div><div id="m15216978167609" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        真的是小姐姐
+                        <!----></div></div><div id="m15216978234137" class="message right"><div class="readSign" style="right: 126px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        99年的吧
+                        <!----></div></div><div id="m15216978338614" class="message left"><!----> <div class="message-text">
+                        是
+                        <!----></div></div><div id="m152169784238510" class="message left"><!----> <div class="message-text">
+                        我的天你为什么什么都知道
+                        <!----></div></div><div id="m15216978457837" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216978486229" class="message left"><!----> <div class="message-text">
+                        突然方张
+                        <!----></div></div><div id="m15216978492799" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        经验之谈
+                        <!----></div></div><div id="m15216978648081" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        按照常识推理
+                        <!----></div></div><div id="m15216978757208" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        要不要说下推理过程
+                        <!----></div></div><div id="m15216978772481" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈
+                        <!----></div></div><div id="m15216978836703" class="message left"><!----> <div class="message-text">
+                        哈哈哈哈好啊
+                        <!----></div></div><div id="m15216978968992" class="message right"><div class="readSign" style="right: 232px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        首先我知道了你的ip地址
+                        <!----></div></div><div id="m15216979067523" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        从而得知你是西安的
+                        <!----></div></div><div id="m15216979202357" class="message right"><div class="readSign" style="right: 217px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        然后18~23这个年龄段
+                        <!----></div></div><div id="m15216979306293" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        而且是西安的
+                        <!----></div></div><div id="m152169793632410" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        大概率是大学生
+                        <!----></div></div><div id="m15216979577423" class="message right"><div class="readSign" style="right: 254px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        现在大一的大部分是99年的
+                        <!----></div></div><div id="m15216979813959" class="message right"><div class="readSign" style="right: 268px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        这些当然都只是概率大些而已
+                        <!----></div></div><div id="m15216979868469" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        说完了
+                        <!----></div></div><div id="m15216979925721" class="message left"><!----> <div class="message-text">
+                        哈哈哈哈
+                        <!----></div></div><div id="m15216979964100" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈哈
+                        <!----></div></div><div id="m15216979985709" class="message left"><!----> <div class="message-text">
+                        还是觉得你好厉害
+                        <!----></div></div><div id="m152169800275110" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        其实没那么可怕是吧
+                        <!----></div></div><div id="m15216980114380" class="message left"><!----> <div class="message-text">
+                        嗯不可怕
+                        <!----></div></div><div id="m15216980144174" class="message right"><div class="readSign" style="right: 236px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我昨天遇到一个更怕我的
+                        <!----></div></div><div id="m15216980235060" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        因为是同一个城市的
+                        <!----></div></div><div id="m15216980301537" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        老怕我去找她
+                        <!----></div></div><div id="m15216980319466" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈
+                        <!----></div></div><div id="m15216980357836" class="message left"><!----> <div class="message-text">
+                        哈哈哈哈哈哈哈
+                        <!----></div></div><div id="m15216980418927" class="message left"><!----> <div class="message-text">
+                        你是哪里的啊
+                        <!----></div></div><div id="m15216980445442" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        南京
+                        <!----></div></div><div id="m15216980670007" class="message left"><!----> <div class="message-text">
+                        哦哦
+                        <!----></div></div><div id="m15216980773883" class="message left"><!----> <div class="message-text">
+                        我还没去南京
+                        <!----></div></div><div id="m15216980813332" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216980873634" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        有机会可以来啊
+                        <!----></div></div><div id="m15216980943691" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        还是有很多地方好玩的
+                        <!----></div></div><div id="m15216981015883" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        虽然我没怎么出去过
+                        <!----></div></div><div id="m15216981027324" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216981183551" class="message left"><!----> <div class="message-text">
+                        嗯有机会可以去
+                        <!----></div></div><div id="m15216981212004" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        恩恩额
+                        <!----></div></div><div id="m152169812576810" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你家哪的
+                        <!----></div></div><div id="m15216981312192" class="message left"><!----> <div class="message-text">
+                        和我一样了西安大多地方我也没去过
+                        <!----></div></div><div id="m15216981378683" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216981454534" class="message left"><!----> <div class="message-text">
+                        我家是西安的啊
+                        <!----></div></div><div id="m15216981495608" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那是因为你才第一年
+                        <!----></div></div><div id="m15216981517699" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        额鹅鹅鹅
+                        <!----></div></div><div id="m15216981578231" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        光速打脸
+                        <!----></div></div><div id="m15216981621816" class="message left"><!----> <div class="message-text">
+                        其实我这会在青海x
+                        <!----></div></div><div id="m15216981687745" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈？
+                        <!----></div></div><div id="m15216981711869" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        这样啊
+                        <!----></div></div><div id="m15216981766417" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        用的流量？
+                        <!----></div></div><div id="m152169818352510" class="message left"><!----> <div class="message-text">
+                        流量
+                        <!----></div></div><div id="m15216981864497" class="message right"><div class="readSign" style="right: 184px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        所以显示西安的ip
+                        <!----></div></div><div id="m15216981895025" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        可能是这样
+                        <!----></div></div><div id="m15216981970133" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        原来会这样啊
+                        <!----></div></div><div id="m15216982081641" class="message right"><div class="readSign" style="right: 252px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        以前我从没有查证这个事情
+                        <!----></div></div><div id="m15216982137279" class="message left"><!----> <div class="message-text">
+                        哈哈哈我这会用的我西安的卡
+                        <!----></div></div><div id="m15216982200014" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈
+                        <!----></div></div><div id="m15216982217611" class="message right"><div class="readSign" style="right: 95px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        soga
+                        <!----></div></div><div id="m15216982232421" class="message left"><!----> <div class="message-text">
+                        没用西宁卡
+                        <!----></div></div><div id="m15216982327185" class="message left"><!----> <div class="message-text">
+                        所以我才惊讶
+                        <!----></div></div><div id="m15216982344361" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你在西宁干啥
+                        <!----></div></div><div id="m15216982392985" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        上学？
+                        <!----></div></div><div id="m15216982436781" class="message left"><!----> <div class="message-text">
+                        西宁上学
+                        <!----></div></div><div id="m152169824743310" class="message left"><!----> <div class="message-text">
+                        对啊
+                        <!----></div></div><div id="m15216982498107" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        青海大学吗
+                        <!----></div></div><div id="m15216982548201" class="message left"><!----> <div class="message-text">
+                        嗯
+                        <!----></div></div><div id="m15216982611467" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        还可以子
+                        <!----></div></div><div id="m15216982714291" class="message right"><div class="readSign" style="right: 252px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        西安那么多学校怎么不选啊
+                        <!----></div></div><div id="m15216982725289" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m152169828029210" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        呆腻了吗
+                        <!----></div></div><div id="m15216982841344" class="message left"><!----> <div class="message-text">
+                        被迫
+                        <!----></div></div><div id="m15216983067235" class="message left"><!----> <div class="message-text">
+                        我也想选西安的可好多专业不太喜欢我想去的我爸又不让
+                        <!----></div></div><div id="m15216983186091" class="message left"><!----> <div class="message-text">
+                        被迫青海大学学医x
+                        <!----></div></div><div id="m15216983210312" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哇
+                        <!----></div></div><div id="m15216983245428" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        医学生啊
+                        <!----></div></div><div id="m15216983285014" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        崇拜
+                        <!----></div></div><div id="m15216983382695" class="message left"><!----> <div class="message-text">
+                        别别别我学中医
+                        <!----></div></div><div id="m15216983488175" class="message left"><!----> <div class="message-text">
+                        而且我学的也不怎么样
+                        <!----></div></div><div id="m15216983553696" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216983605419" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那你要读研吗
+                        <!----></div></div><div id="m15216983695526" class="message left"><!----> <div class="message-text">
+                        要吧
+                        <!----></div></div><div id="m15216983840046" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        嗯嗯
+                        <!----></div></div><div id="m15216983921849" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        医学大概率是会读研的
+                        <!----></div></div><div id="m15216984185902" class="message left"><!----> <div class="message-text">
+                        嗯是这样没错
+                        <!----></div></div><div id="m15216984363705" class="message left"><!----> <div class="message-text">
+                        不过我觉得好累了
+                        <!----></div></div><div id="m15216984495658" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        指的是此刻还是
+                        <!----></div></div><div id="m15216984649263" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        读书读累了？
+                        <!----></div></div><div id="m15216984837115" class="message left"><!----> <div class="message-text">
+                        这会还好吧我觉得考研可能比较累
+                        <!----></div></div><div id="m15216985042422" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        嗯嗯
+                        <!----></div></div><div id="m15216985157582" class="message right"><div class="readSign" style="right: 284px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        刚上大学会有这样的感觉很正常
+                        <!----></div></div><div id="m15216985237338" class="message right"><div class="readSign" style="right: 236px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        但是大学很快就会过去的
+                        <!----></div></div><div id="m152169853352410" class="message right"><div class="readSign" style="right: 236px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我现在就好怀念大学生活
+                        <!----></div></div><div id="m15216985379540" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        可惜回不去了
+                        <!----></div></div><div id="m15216985427914" class="message left"><!----> <div class="message-text">
+                        诶诶
+                        <!----></div></div><div id="m15216985503304" class="message left"><!----> <div class="message-text">
+                        你毕业了？
+                        <!----></div></div><div id="m15216985550002" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        是啊
+                        <!----></div></div><div id="m15216985578805" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        去年毕业了
+                        <!----></div></div><div id="m15216985649414" class="message right"><div class="readSign" style="right: 158px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        因为我95年的
+                        <!----></div></div><div id="m15216985823130" class="message left"><!----> <div class="message-text">
+                        啊好吧
+                        <!----></div></div><div id="m15216986000931" class="message left"><!----> <div class="message-text">
+                        那这会在上班？
+                        <!----></div></div><div id="m152169860199110" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        嗯呢
+                        <!----></div></div><div id="m15216986033999" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        上班
+                        <!----></div></div><div id="m15216986095217" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        现在没什么事
+                        <!----></div></div><div id="m15216986130612" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        闲得无聊
+                        <!----></div></div><div id="m15216986175657" class="message left"><!----> <div class="message-text">
+                        哈哈
+                        <!----></div></div><div id="m15216986178262" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        就来这逛逛
+                        <!----></div></div><div id="m15216986276161" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你是在医学院吗
+                        <!----></div></div><div id="m15216986377173" class="message left"><!----> <div class="message-text">
+                        本来还想问你上班玩手机不会被抓
+                        <!----></div></div><div id="m15216986501731" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我用的还是电脑
+                        <!----></div></div><div id="m15216986515036" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈
+                        <!----></div></div><div id="m15216986532483" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        不怕
+                        <!----></div></div><div id="m15216986580621" class="message left"><!----> <div class="message-text">
+                        对在医学院
+                        <!----></div></div><div id="m15216986594268" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我们比较自由
+                        <!----></div></div><div id="m15216986737411" class="message left"><!----> <div class="message-text">
+                        那挺好的
+                        <!----></div></div><div id="m15216986791890" class="message right"><div class="readSign" style="right: 236px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你们学院占地面积好小啊
+                        <!----></div></div><div id="m15216986816011" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216986868932" class="message left"><!----> <div class="message-text">
+                        噗
+                        <!----></div></div><div id="m15216986936243" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        看了会有一种压迫感
+                        <!----></div></div><div id="m15216986955328" class="message left"><!----> <div class="message-text">
+                        但是离宿舍很远了
+                        <!----></div></div><div id="m15216986986077" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈？
+                        <!----></div></div><div id="m15216987045268" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你们宿舍在哪
+                        <!----></div></div><div id="m15216987054481" class="message left"><!----> <div class="message-text">
+                        哦哦哦
+                        <!----></div></div><div id="m15216987127355" class="message left"><!----> <div class="message-text">
+                        我没在医学院本部
+                        <!----></div></div><div id="m15216987254613" class="message left"><!----> <div class="message-text">
+                        我在青大基础医学院
+                        <!----></div></div><div id="m15216987344343" class="message left"><!----> <div class="message-text">
+                        你看的大概是市里的
+                        <!----></div></div><div id="m15216987393715" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        额
+                        <!----></div></div><div id="m15216987412119" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        是的
+                        <!----></div></div><div id="m15216987470367" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        难道你在郊区？
+                        <!----></div></div><div id="m15216987495830" class="message left"><!----> <div class="message-text">
+                        市里很小了
+                        <!----></div></div><div id="m15216987541045" class="message left"><!----> <div class="message-text">
+                        在郊区
+                        <!----></div></div><div id="m15216987734512" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        感觉是有点偏啊
+                        <!----></div></div><div id="m15216987907774" class="message left"><!----> <div class="message-text">
+                        非常偏远…
+                        <!----></div></div><div id="m15216987914167" class="message right"><div class="readSign" style="right: 428px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        不过我觉得一个大学就能满足学生的大部分生活需求
+                        <!----></div></div><div id="m15216987940865" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        也还好
+                        <!----></div></div><div id="m15216988046817" class="message right"><div class="readSign" style="right: 236px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那你们附近有玩的地方吗
+                        <!----></div></div><div id="m15216988134761" class="message left"><!----> <div class="message-text">
+                        木有x
+                        <!----></div></div><div id="m15216988233253" class="message right"><div class="readSign" style="right: 203px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        电影院、KTV之类的
+                        <!----></div></div><div id="m15216988248579" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        没有吗
+                        <!----></div></div><div id="m15216988334073" class="message left"><!----> <div class="message-text">
+                        每次看电影都要坐四十分钟车去市里
+                        <!----></div></div><div id="m15216988368135" class="message right"><div class="readSign" style="right: 78px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        ....
+                        <!----></div></div><div id="m15216988428896" class="message left"><!----> <div class="message-text">
+                        KTV也一样了
+                        <!----></div></div><div id="m15216988424119" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        这就有点惨了
+                        <!----></div></div><div id="m15216988701385" class="message left"><!----> <div class="message-text">
+                        啊哈…
+                        <!----></div></div><div id="m15216988794921" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        受地形限制吧
+                        <!----></div></div><div id="m15216988865884" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        西宁这个城市就是这样
+                        <!----></div></div><div id="m15216989168402" class="message left"><!----> <div class="message-text">
+                        嗯可能吧这个是新校区
+                        <!----></div></div><div id="m15216989212802" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        感觉是沿着河谷建城的
+                        <!----></div></div><div id="m15216989293122" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你们还有老校区吗
+                        <!----></div></div><div id="m152169895221910" class="message left"><!----> <div class="message-text">
+                        你刚看的就是医学院本部
+                        <!----></div></div><div id="m15216989672915" class="message left"><!----> <div class="message-text">
+                        我们大三以后都去那里了
+                        <!----></div></div><div id="m15216989743976" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哇哦
+                        <!----></div></div><div id="m15216989782454" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那挺好的
+                        <!----></div></div><div id="m15216989868953" class="message left"><!----> <div class="message-text">
+                        不过其他院的就没这么幸运了
+                        <!----></div></div><div id="m15216990022011" class="message left"><!----> <div class="message-text">
+                        他们还要呆在这个荒无人烟的地方x
+                        <!----></div></div><div id="m15216990060175" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈哈
+                        <!----></div></div><div id="m15216990101323" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那是惨
+                        <!----></div></div><div id="m15216990133207" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那你好好学习
+                        <!----></div></div><div id="m15216990224751" class="message right"><div class="readSign" style="right: 252px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        研究生不要呆在这个地方了
+                        <!----></div></div><div id="m15216990381732" class="message left"><!----> <div class="message-text">
+                        嗯嗯
+                        <!----></div></div><div id="m15216990699456" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你每次回家要多久？
+                        <!----></div></div><div id="m15216990837741" class="message left"><!----> <div class="message-text">
+                        动车四个半小时
+                        <!----></div></div><div id="m15216990899242" class="message left"><!----> <div class="message-text">
+                        也挺远的了
+                        <!----></div></div><div id="m15216990915070" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那还好吧
+                        <!----></div></div><div id="m15216991084608" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我上学的时候没有动车
+                        <!----></div></div><div id="m15216991172729" class="message right"><div class="readSign" style="right: 149px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        普快9个小时
+                        <!----></div></div><div id="m15216991200544" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        啧啧啧
+                        <!----></div></div><div id="m15216991334252" class="message left"><!----> <div class="message-text">
+                        啊那也挺远
+                        <!----></div></div><div id="m15216991461769" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        是啊
+                        <!----></div></div><div id="m15216991571541" class="message left"><!----> <div class="message-text">
+                        我还算幸运
+                        <!----></div></div><div id="m15216991619806" class="message right"><div class="readSign" style="right: 236px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        现在工作的地方离家更远
+                        <!----></div></div><div id="m152169916380010" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        惨
+                        <!----></div></div><div id="m15216991811832" class="message left"><!----> <div class="message-text">
+                        心疼了
+                        <!----></div></div><div id="m15216991873961" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        嗯嗯
+                        <!----></div></div><div id="m15216992059307" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你下午没课吗
+                        <!----></div></div><div id="m15216992181115" class="message left"><!----> <div class="message-text">
+                        有
+                        <!----></div></div><div id="m15216992283807" class="message left"><!----> <div class="message-text">
+                        近代史
+                        <!----></div></div><div id="m15216992325414" class="message right"><div class="readSign" style="right: 73px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        ...
+                        <!----></div></div><div id="m15216992375845" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        为什么要学这个啊
+                        <!----></div></div><div id="m15216992503706" class="message left"><!----> <div class="message-text">
+                        基础课
+                        <!----></div></div><div id="m15216992611030" class="message left"><!----> <div class="message-text">
+                        大家都要学吧貌似
+                        <!----></div></div><div id="m15216992684918" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        对对对
+                        <!----></div></div><div id="m15216992709621" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        记起来了
+                        <!----></div></div><div id="m15216992761666" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        还有思修
+                        <!----></div></div><div id="m15216992786485" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        毛概
+                        <!----></div></div><div id="m15216992805312" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        之类的
+                        <!----></div></div><div id="m15216992819129" class="message left"><!----> <div class="message-text">
+                        我也不想学这个啊
+                        <!----></div></div><div id="m15216992921225" class="message left"><!----> <div class="message-text">
+                        思修上学期学的
+                        <!----></div></div><div id="m15216993063559" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        考研的时候要考
+                        <!----></div></div><div id="m15216993096239" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        还是好好学吧
+                        <!----></div></div><div id="m15216993109256" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈哈哈
+                        <!----></div></div><div id="m152169931868810" class="message left"><!----> <div class="message-text">
+                        不是吧…
+                        <!----></div></div><div id="m15216993209240" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        为了将来的幸福
+                        <!----></div></div><div id="m15216993246314" class="message left"><!----> <div class="message-text">
+                        天哪…
+                        <!----></div></div><div id="m152169933537710" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我不知道医学是不是
+                        <!----></div></div><div id="m15216993497967" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        反正其他专业是的
+                        <!----></div></div><div id="m15216993589484" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        zhengzhi
+                        <!----></div></div><div id="m15216993629019" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        数学
+                        <!----></div></div><div id="m15216993648994" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        英语
+                        <!----></div></div><div id="m15216993666619" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        专业课
+                        <!----></div></div><div id="m15216993700235" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        就这样
+                        <!----></div></div><div id="m15216993760706" class="message left"><!----> <div class="message-text">
+                        我们没学数学呢还…
+                        <!----></div></div><div id="m15216993792394" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你可以去了解下
+                        <!----></div></div><div id="m15216993822113" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        早作打算
+                        <!----></div></div><div id="m15216993989457" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        问问大五的学长学姐
+                        <!----></div></div><div id="m15216994165383" class="message left"><!----> <div class="message-text">
+                        我们这儿目前只有大一大二的
+                        <!----></div></div><div id="m15216994212958" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        可以
+                        <!----></div></div><div id="m15216994261402" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        网上找嘛
+                        <!----></div></div><div id="m15216994276067" class="message left"><!----> <div class="message-text">
+                        其他的都在本部了
+                        <!----></div></div><div id="m15216994361329" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        贴吧
+                        <!----></div></div><div id="m15216994407840" class="message left"><!----> <div class="message-text">
+                        哎…
+                        <!----></div></div><div id="m15216994413854" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        或者论坛之类的
+                        <!----></div></div><div id="m15216994488150" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        发帖问问
+                        <!----></div></div><div id="m152169946379210" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        越早准备越大的优势
+                        <!----></div></div><div id="m15216994726712" class="message left"><!----> <div class="message-text">
+                        嗯也是了
+                        <!----></div></div><div id="m15216994866713" class="message right"><div class="readSign" style="right: 460px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我就特别羡慕那些一上大学就想明白自己毕业后要干嘛的
+                        <!----></div></div><div id="m15216995007870" class="message right"><div class="readSign" style="right: 316px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我倒大三了才想起我自己是要工作的
+                        <!----></div></div><div id="m15216995069668" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        然后才开始学技能
+                        <!----></div></div><div id="m15216995466521" class="message left"><!----> <div class="message-text">
+                        我现在也挺迷茫啊…
+                        <!----></div></div><div id="m15216995578406" class="message left"><!----> <div class="message-text">
+                        不过不太想搞科研
+                        <!----></div></div><div id="m15216995588234" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        不已经确定考研了吗
+                        <!----></div></div><div id="m152169956148610" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        额
+                        <!----></div></div><div id="m15216995700623" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        方向慢慢培养嘛
+                        <!----></div></div><div id="m15216995772247" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        先学好基础课
+                        <!----></div></div><div id="m15216995955785" class="message left"><!----> <div class="message-text">
+                        嗯嗯
+                        <!----></div></div><div id="m15216995949307" class="message right"><div class="readSign" style="right: 252px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        有能考上研究生的能力再说
+                        <!----></div></div><div id="m15216995973814" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216996112714" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        别迷茫
+                        <!----></div></div><div id="m15216996391287" class="message left"><!----> <div class="message-text">
+                        还是好好学习天天向上是吗
+                        <!----></div></div><div id="m15216996431045" class="message left"><!----> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216996664244" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        对的
+                        <!----></div></div><div id="m152169966905310" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216996704712" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        来
+                        <!----></div></div><div id="m15216996743242" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        给你讲个笑话
+                        <!----></div></div><div id="m15216996999471" class="message right"><div class="readSign" style="right: 533px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        “把我的被杯子拿上来” “我觉得你应该用请字”   “把我的杯子请上来！”
+                        <!----></div></div><div id="m15216997102672" class="message left"><!----> <div class="message-text">
+                        哈哈哈哈哈哈哈哈
+                        <!----></div></div><div id="m15216997265013" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈
+                        <!----></div></div><div id="m15216997935929" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        这话应该分段看
+                        <!----></div></div><div id="m15216997939804" class="message left"><!----> <div class="message-text">
+                        和那个我用我宝贝摩托车接你一个效果
+                        <!----></div></div><div id="m15216998049080" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈？
+                        <!----></div></div><div id="m15216998088235" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        没听过
+                        <!----></div></div><div id="m15216998117753" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你讲讲
+                        <!----></div></div><div id="m15216998444085" class="message left"><!----> <div class="message-text">
+                        男的说，今晚我们出去吧我用摩托车接你。
+                        <!----></div></div><div id="m15216998612422" class="message left"><!----> <div class="message-text">
+                        女的说你就不能说点宝贝什么的吗
+                        <!----></div></div><div id="m15216998724711" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈
+                        <!----></div></div><div id="m15216998826900" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        懂了
+                        <!----></div></div><div id="m15216998910155" class="message left"><!----> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15216998969712" class="message left"><!----> <div class="message-text">
+                        懂了就好
+                        <!----></div></div><div id="m15216999015830" class="message left"><!----> <div class="message-text">
+                        我打字慢
+                        <!----></div></div><div id="m15216999059608" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        还好啊
+                        <!----></div></div><div id="m15216999181169" class="message right"><div class="readSign" style="right: 268px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我知道手机玩这网站不太方便
+                        <!----></div></div><div id="m15216999308454" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        对了
+                        <!----></div></div><div id="m15216999383147" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你们离青海湖很近吧
+                        <!----></div></div><div id="m15216999442375" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你去过吗
+                        <!----></div></div><div id="m15216999544474" class="message left"><!----> <div class="message-text">
+                        两百多公里
+                        <!----></div></div><div id="m15216999655414" class="message left"><!----> <div class="message-text">
+                        没去过呢
+                        <!----></div></div><div id="m15216999827983" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哇
+                        <!----></div></div><div id="m15216999885749" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        原来还那么远啊
+                        <!----></div></div><div id="m15216999942386" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        有机会可以去看看啊
+                        <!----></div></div><div id="m15217000000573" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我觉得一定很美
+                        <!----></div></div><div id="m15217000150356" class="message left"><!----> <div class="message-text">
+                        对，而且最好是自驾去
+                        <!----></div></div><div id="m15217000379220" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哇
+                        <!----></div></div><div id="m15217000402005" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        这样啊
+                        <!----></div></div><div id="m15217000413201" class="message left"><!----> <div class="message-text">
+                        还有茶卡盐湖
+                        <!----></div></div><div id="m15217000453482" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        不懂诶
+                        <!----></div></div><div id="m15217000856975" class="message left"><!----> <div class="message-text">
+                        跟团的话可能好景色看不到
+                        <!----></div></div><div id="m15217000938023" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈
+                        <!----></div></div><div id="m15217000957086" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        可能是
+                        <!----></div></div><div id="m15217001034347" class="message right"><div class="readSign" style="right: 220px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        也可以自己坐大巴去啊
+                        <!----></div></div><div id="m15217001100371" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        跟同学一起
+                        <!----></div></div><div id="m15217001235228" class="message left"><!----> <div class="message-text">
+                        我室友都是本地人
+                        <!----></div></div><div id="m15217001259421" class="message right"><div class="readSign" style="right: 167px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        5~8个人的样子
+                        <!----></div></div><div id="m15217001292455" class="message left"><!----> <div class="message-text">
+                        人家都去过了
+                        <!----></div></div><div id="m15217001281906" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        额
+                        <!----></div></div><div id="m15217001384362" class="message left"><!----> <div class="message-text">
+                        我…对吧
+                        <!----></div></div><div id="m15217001385279" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那你找没去过的
+                        <!----></div></div><div id="m15217001421493" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        一起
+                        <!----></div></div><div id="m15217001816943" class="message left"><!----> <div class="message-text">
+                        以后有机会的话就去
+                        <!----></div></div><div id="m15217001859417" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        嗯嗯
+                        <!----></div></div><div id="m15217001888647" class="message right"><div class="readSign" style="right: 140px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        多出去走走
+                        <!----></div></div><div id="m15217002464227" class="message left"><!----> <div class="message-text">
+                        景点其实都不太近
+                        <!----></div></div><div id="m15217002548016" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        额
+                        <!----></div></div><div id="m15217002600678" class="message left"><!----> <div class="message-text">
+                        我在这儿朋友也少
+                        <!----></div></div><div id="m15217002635024" class="message right"><div class="readSign" style="right: 156px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        小景点也行啊
+                        <!----></div></div><div id="m15217002764334" class="message left"><!----> <div class="message-text">
+                        就不太出门
+                        <!----></div></div><div id="m15217002774749" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        同学玩得不好吗
+                        <!----></div></div><div id="m15217002810447" class="message right"><div class="readSign" style="right: 73px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        ...
+                        <!----></div></div><div id="m15217002920131" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你们一个班多少人
+                        <!----></div></div><div id="m15217003040455" class="message left"><!----> <div class="message-text">
+                        46
+                        <!----></div></div><div id="m15217003296047" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那还挺多同学的啊
+                        <!----></div></div><div id="m15217003352116" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        难不成全男生？
+                        <!----></div></div><div id="m15217003432509" class="message left"><!----> <div class="message-text">
+                        没有几个老乡
+                        <!----></div></div><div id="m15217003471733" class="message right"><div class="readSign" style="right: 73px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        ...
+                        <!----></div></div><div id="m15217003554126" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        为什么一定要老乡？
+                        <!----></div></div><div id="m15217003580881" class="message left"><!----> <div class="message-text">
+                        还有三分之一本地人
+                        <!----></div></div><div id="m15217003602905" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        不懂诶
+                        <!----></div></div><div id="m15217003727784" class="message left"><!----> <div class="message-text">
+                        我…有点不太会交友啦…
+                        <!----></div></div><div id="m15217003811321" class="message left"><!----> <div class="message-text">
+                        社交啥的…
+                        <!----></div></div><div id="m15217004034059" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        额
+                        <!----></div></div><div id="m15217004199186" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        你今天的表现就挺好
+                        <!----></div></div><div id="m15217004303366" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我说话你能搭上
+                        <!----></div></div><div id="m15217004404542" class="message right"><div class="readSign" style="right: 204px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        我最怕不接我话的人
+                        <!----></div></div><div id="m15217004484918" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那就尴尬的不行
+                        <!----></div></div><div id="m15217004551595" class="message left"><!----> <div class="message-text">
+                        那其实是你会聊天，至少我遇到一个人我们俩互相嗯
+                        <!----></div></div><div id="m15217004662626" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈
+                        <!----></div></div><div id="m15217004674756" class="message left"><!----> <div class="message-text">
+                        尬聊
+                        <!----></div></div><div id="m15217004678859" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        好吧
+                        <!----></div></div><div id="m15217004790471" class="message right"><div class="readSign" style="right: 316px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        其实我觉得我现实中是不太会聊天的
+                        <!----></div></div><div id="m15217006299379" class="message left"><!----> <div class="message-text">
+                        我现实就熟人的话话比较多
+                        <!----></div></div><div id="m15217006374388" class="message left"><!----> <div class="message-text">
+                        不熟就…
+                        <!----></div></div><div id="m15217006412469" class="message right"><div class="readSign" style="right: 172px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        熟人肯定话多啊
+                        <!----></div></div><div id="m15217006838724" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        小姐姐留个微信吧
+                        <!----></div></div><div id="m15217006931396" class="message right"><div class="readSign" style="right: 124px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈哈
+                        <!----></div></div><div id="m15217007424320" class="message right"><div class="readSign" style="right: 76px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        额
+                        <!----></div></div><div id="m15217007529496" class="message left"><!----> <div class="message-text">
+                        哦哦哦
+                        <!----></div></div><div id="m15217007613807" class="message left"><!----> <div class="message-text">
+                        刚有人给我发微信
+                        <!----></div></div><div id="m15217007648563" class="message left"><!----> <div class="message-text">
+                        回了一句
+                        <!----></div></div><div id="m15217007665008" class="message right"><div class="readSign" style="right: 108px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        哈哈哈
+                        <!----></div></div><div id="m15217007677884" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        好吧
+                        <!----></div></div><div id="m15217007691610" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        没事
+                        <!----></div></div><div id="m15217007873442" class="message right"><div class="readSign" style="right: 188px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        那你可以留微信吗
+                        <!----></div></div><div id="m15217007933912" class="message left"><!----> <div class="message-text msg-type-img" style="background-image: url(&quot;http://7xpsm9.com1.z0.glb.clouddn.com/f339708423840?imageslim&quot;);">
+                        7xpsm9.com1.z0.glb.clouddn.com/f339708423840?imageslim
+                        <!----></div></div><div id="m15217008140346" class="message right"><div class="readSign" style="right: 77px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        ok
+                        <!----></div></div><div id="m15217008175712" class="message right"><div class="readSign" style="right: 96px; visibility: visible;">
+                        已读
+                    </div> <div class="message-text">
+                        good
+                        <!----></div></div><div id="m15217008199102" class="message right"><div class="readSign" style="right: 92px; visibility: visible;">
+                        已送达
+                    </div> <div class="message-text">
+                        加了
+                        <!----></div></div> <!----></div>
+	</div>
+</body>
+</html>
