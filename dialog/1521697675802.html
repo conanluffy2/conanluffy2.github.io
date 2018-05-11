@@ -1239,7 +1239,8 @@
                         加了
                         <!----></div></div> <!----></div>
 	</div>
-	(function($) {
+	<script>
+      (function($) {
         $.fn.typewriter = function() {
           this.each(function() {
             var $ele = $(this), str = $ele.html(), progress = 0;
@@ -1251,16 +1252,16 @@
               } else {
                 progress++;
               }
-	console.log(progress);
               $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
               if (progress >= str.length) {
                 clearInterval(timer);
               }
-            }, 50);
+            }, 75);
           });
           return this;
         };
       })(jQuery);
       $("#code").typewriter();
+    </script>
 </body>
 </html>
