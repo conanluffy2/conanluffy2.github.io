@@ -7,41 +7,11 @@
 <title>聊天记录</title>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <style type="text/css">
+		::-webkit-scrollbar{display: none;}
 		.content {
 			max-width: 800px;
 			margin: auto;
-		}
-		.sys-msg, .sys-msg-keep {
-			margin: 10px auto;
-			overflow: hidden;
-			color: #fff;
-			min-width: 10rem;
-			border-radius: 0.8rem;
-		}
-		.sys-msg-partner-info .message-text {
-			border-radius: 15px!important;
-			padding-top: 0.5rem;
-			padding-bottom: 0.5rem;
-			max-width: 90%;
-		}
-		.sys-msg-keep .message-text {
-			background-color: gray;
-			min-width: 10rem;
-			margin-left: 0.8rem;
-		}
-		.partner-label-container {
-			margin-left: -0.2rem;
-			margin-top: 0.5rem;
-		}
-		.partner-label {
-			font-size: 0.5rem;
-			border: solid 1px;
-			border-radius: 10%;
-			padding: 0.12rem 0.28rem;
-			display: inline-block;
-			position: relative;
-			top: -0.1rem;
-			margin: 0rem 0.4rem 0rem 0.2rem;
+			font-size: 12px;
 		}
 		.message {
 			margin: 10px auto;
@@ -53,16 +23,6 @@
 			margin-left: 20px;
 			background-color: lightgray;
 			float: left;
-		}
-		.readSign {
-			float: right;
-			margin-right: 10px;
-			margin-top: 0.8rem;
-			font-size: 12px;
-			background-color: lightgray;
-			padding: 2px 5px;
-			border-radius: 4px;
-			position: absolute;
 		}
 		.message.right .message-text {
 			margin-right: 20px;
@@ -76,11 +36,6 @@
 			border-radius: 25px;
 			position: relative;
 			margin-bottom: 1px;
-		}
-		.sys-msg .message-text, .sys-msg-keep .message-text {
-			background-color: gray;
-			min-width: 10rem;
-			margin-left: 20px;
 		}
 		.msg-type-img {
 	    height: 400px;
@@ -110,7 +65,7 @@
               } else {
                 progress++;
               }
-              $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
+              $ele.html(str.substring(0, progress) + (progress & 1 ? '' : ''));
               document.getElementById("end").scrollIntoView(); 
               if (progress >= str.length) {
                 clearInterval(timer);
