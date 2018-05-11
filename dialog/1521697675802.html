@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width">
 	<title>聊天记录</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 	<style type="text/css">
 		.content {
 			max-width: 800px;
@@ -102,7 +103,7 @@
 </head>
 <body>
 	<div class="content">
-<div class="messages"><div id="m15216976758072" class="sys-msg-keep sys-msg-partner-info"><!----> <div class="message-text">
+<div class="messages" id="code"><div id="m15216976758072" class="sys-msg-keep sys-msg-partner-info"><!----> <div class="message-text">
                         对方信息：女生 18-23岁 
                         <!----></div></div><div id="m15216976861274" class="message right"><div class="readSign" style="right: 94px; visibility: visible;">
                         已读
@@ -1238,5 +1239,27 @@
                         加了
                         <!----></div></div> <!----></div>
 	</div>
+	(function($) {
+        $.fn.typewriter = function() {
+          this.each(function() {
+            var $ele = $(this), str = $ele.html(), progress = 0;
+            $ele.html('');
+            var timer = setInterval(function() {
+              var current = str.substr(progress, 1);
+              if (current == '<') {
+                progress = str.indexOf('>', progress) + 1;
+              } else {
+                progress++;
+              }
+              $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
+              if (progress >= str.length) {
+                clearInterval(timer);
+              }
+            }, 50);
+          });
+          return this;
+        };
+      })(jQuery);
+      $("#code").typewriter();
 </body>
 </html>
