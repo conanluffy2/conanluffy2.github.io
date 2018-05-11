@@ -102,8 +102,8 @@
 	</style>
 </head>
 <body>
-	<div class="content">
-<div class="messages" id="code"><div id="m15216976758072" class="sys-msg-keep sys-msg-partner-info"><!----> <div class="message-text">
+	<div class="content" id="code">
+<div class="messages" ><div id="m15216976758072" class="sys-msg-keep sys-msg-partner-info"><!----> <div class="message-text">
                         对方信息：女生 18-23岁 
                         <!----></div></div><div id="m15216976861274" class="message right"><div class="readSign" style="right: 94px; visibility: visible;">
                         已读
@@ -1251,6 +1251,7 @@
               } else {
                 progress++;
               }
+	console.log(progress);
               $ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));
               if (progress >= str.length) {
                 clearInterval(timer);
